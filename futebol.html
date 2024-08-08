@@ -21,53 +21,39 @@
     <!-- Style.css -->
     <style>
 
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+.site-header {
+  background-color: #333;
+  color: #000000;
+  padding: 10px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
 }
 
-.site-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px 20px;
-    background-color: #333;
-    color: #fff;
+.logo img {
+  height: 50px; 
 }
 
 .main-nav ul {
-    list-style: none;
-    display: flex;
-    gap: 20px; 
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
 }
 
-.main-nav a {
-    text-decoration: none;
-    color: #fff;
-    font-size: 16px;
-    transition: color 0.3s ease;
+.main-nav ul li {
+  margin-right: 20px;
 }
 
-.main-nav a:hover {
-    color: #f0f0f0; 
+.main-nav ul li a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: bold;
 }
 
-
-@media (max-width: 768px) {
-    .site-header {
-        flex-direction: column;
-        text-align: center;
-    }
-
-    .main-nav ul {
-        flex-direction: column;
-        gap: 10px;
-    }
-
-    .main-nav a {
-        font-size: 18px;
-    }
+.main-nav ul li a:hover {
+  color: #ffcc00;
 }
 
 /* Salve aqui */ 
