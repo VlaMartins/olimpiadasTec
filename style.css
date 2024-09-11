@@ -1,0 +1,36 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+.flex {
+    background-color: blueviolet;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 10px;
+}
+
+.quadrado {
+    border: solid red;
+    background-color: rgb(124, 124, 124);
+    width: 300px;
+    height: 600px;
+    flex-wrap: wrap;
+}
+.quadradoF{
+background-color: black;
+}
+
+.quadrado:hover{
+color: rgb(238, 238, 238);
+transition: 400ms;
+opacity: 0.55;
+}
+
+.imagem{
+width: 100%;
+height: 500px;
+}
+.texto{
+    font-size: 20px;
+}
