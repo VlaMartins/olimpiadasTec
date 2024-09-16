@@ -22,16 +22,9 @@ body{
 .quadrado {
     border: solid red;
     background-color: rgb(233, 8, 8);
-    /* width: 350px;
-    height: 300px; */
     flex-wrap: wrap;
-}
-
-.quadradoF{
-    background-color: rgb(11, 201, 97);
     text-align: center;
-    padding: 5px;
-
+    padding: 1px;
 }
 
 .quadrado:hover{
