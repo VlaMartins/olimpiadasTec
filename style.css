@@ -17,9 +17,6 @@ body{
     justify-content: space-around;
     flex-wrap: wrap;
     padding: 5px;
-    width: 90%;
-    text-align: center;
-    margin: auto;
 }
 
 .imgcentro{
