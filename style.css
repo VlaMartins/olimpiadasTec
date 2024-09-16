@@ -18,6 +18,7 @@ body{
     flex-wrap: wrap;
     padding: 5px;
     width: 90%;
+    text-align: center;
 }
 
 .quadrado {
