@@ -14,7 +14,7 @@ body{
 .flex {
     background-color: blueviolet;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     flex-wrap: wrap;
     padding: 5px;
 }
