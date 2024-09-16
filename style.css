@@ -22,8 +22,8 @@ body{
 .quadrado {
     border: solid red;
     background-color: rgb(124, 124, 124);
-    width: 300px;
-    height: 250px;
+    width: 350px;
+    height: 300px;
     flex-wrap: wrap;
 }
 
