@@ -12,7 +12,7 @@ body{
 }
 
 .flex {
-    background-color: rgb(5, 1, 9);
+    background-color: rgb(100, 13, 187);
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
@@ -21,14 +21,14 @@ body{
 
 .quadrado {
     border: solid red;
-    background-color: rgb(124, 124, 124);
+    background-color: rgb(233, 8, 8);
     width: 350px;
     height: 300px;
     flex-wrap: wrap;
 }
 
 .quadradoF{
-    background-color: black;
+    background-color: rgb(11, 201, 97);
     text-align: center;
 }
 
