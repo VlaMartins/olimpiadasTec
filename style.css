@@ -30,6 +30,8 @@ body{
 .quadradoF{
     background-color: rgb(11, 201, 97);
     text-align: center;
+    padding: 5px;
+
 }
 
 .quadrado:hover{
