@@ -22,6 +22,13 @@ body{
     margin: auto;
 }
 
+section{
+
+}
+
+.imgcentro{
+    width: 10%;
+}
 .quadrado {
     border: solid red;
     background-color: rgb(233, 8, 8);
