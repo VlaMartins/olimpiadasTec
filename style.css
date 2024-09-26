@@ -94,7 +94,7 @@ body{
   }
   
   .container__botao:checked~.container__rotulo { /*o fundo do botao fica na cor escolhida*/
-      background: red;
+      background: black;
   }
 
 /*OS ITENS DA LISTA / MODALIDADES */
