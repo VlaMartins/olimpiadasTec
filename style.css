@@ -11,7 +11,7 @@ body{
 }
 
 .flex {
-    background-color: rgb(100, 13, 187);
+    background-color:#063573; 
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
