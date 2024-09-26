@@ -104,6 +104,7 @@ body{
 
 .lista-menu {
     display: none;
+    left: 25px;
     position: absolute;
     top: 100%;
     width: 25vw; /*largura do menu */
