@@ -111,9 +111,7 @@ color: #ffcc00;
 }
 
 
-
-/* MENU hamburguer */
-.cabeçalho{
+.cabecalho{
     background-color: #0D0D0D;
     display: flex;
     justify-content: space-between;
@@ -121,74 +119,86 @@ color: #ffcc00;
     position: relative;
 }
 
-.container{
+.container{ /*sobe o menu dentro do header e alinha verticalmente*/
     display: flex;
     align-items: center;
 }
 
-.container__botao {
+.container__botao { /*esconde o botãozinho do check*/
     display: none;
 }
 
-.cabeçalho__menu-hamburguer{
+/*cria o icone do menu hamburguer e coloca dentro do header*/
+.cabecalho__menu-hamburguer{     
     width: 24px;
-    height: 24px;
-    background-image: url(img/Menu.svg);
-    background-repeat: no-repeat;
-    background-position: center;
-    display: inline-block;
-}
-
+     height: 24px;
+     background-image: url(img/menu.svg);
+     background-repeat: no-repeat;
+     background-position: center;
+     display: inline-block;
+ }
+ 
+ /* ajeita o icone do menu*/
 .container__imagem{
-    padding: 1em;
-    justify-content: right;
+    padding: 2em;
 }
 
 .container__titulo {
-    display: none;
+    display: flex;/*REVER POR QUE FUI EU QUEM PUS*/
+    color: greenyellow;
+    padding-left: 1em;
 }
 
-.container__botao:checked~.container__rotulo>.cabeçalho__menu-hamburguer {
+.container__botao:checked~.container__rotulo>.cabecalho__menu-hamburguer {  
     /*esconde e mostra o menu*/
-    background-image: url("img/Menu\ Aberto.png");
-}
+      background-image: url("img/menuAberto.png");
+  }
+  
+  .container__botao:checked~.container__rotulo { /*o fundo do botao fica na cor escolhida*/
+      background: pink;
+  }
 
-.container__botao:checked~.container__rotulo { 
-    background: rgb(169, 16, 16);
+/*OS ITENS DA LISTA / MODALIDADES */
+.container__botao:checked~.lista-menu {
+    display: block; /* mostra a lista bloqueada pq se nao por isso ela some */
 }
 
 .lista-menu {
     display: none;
     position: absolute;
     top: 100%;
-    width: 20vw;
+    width: 25vw; /*largura do menu */
+    background-color:  rgb(117, 175, 30);
+    list-style-type: none;
 }
 
-.container__botao:checked~.lista-menu {
-    display: block;
+.lista-menu__link { /*tam e cor da fonte dos itens de modo geral*/
+    font-size: 22px;
+    color: whitesmoke;
 }
 
-.lista-menu__titulo,
-.lista-menu__item {
+.lista-menu__link:hover { /*tam e cor da fonte altera ao passar o mouse*/
+    font-size: 100px;
+    color: purple;
+}
+
+.lista-menu__item:hover { /*muda cor de fundo ao passar o mouse*/
+    background-color: rgb(185, 177, 225);
+}
+
+.lista-menu__titulo { /* acima onde esta escrito MODALIDADE*/
+    color: greenyellow;
+    font-size: 24px;
+    text-transform: uppercase;
+}
+
+.lista-menu__titulo, .lista-menu__item { /*o titulo MODALIDADE e todos os itens (MODALIDADES) irao ter recuo*/
     padding: 1em;
     background-color:black;
 }
 
-.lista-menu__titulo {
-    color: orangered;
-    font-size: 20px;
-    font-weight: 700;
-}
+  
 
-.lista-menu__link {
-    font-size: 18px;
-    color: #F2A30F;
-}
-
-
-.lista-menu__link:hover {
-    background-color: yellow;
-}
 
 /* tmas olipicos */
 
