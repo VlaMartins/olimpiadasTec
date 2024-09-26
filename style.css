@@ -6,7 +6,7 @@
 }
 
 body{
-    color: white;
+    color: black;
     font-family: "Poppins", sans-serif;
 }
 
@@ -22,7 +22,7 @@ body{
     width: 10%;
 }
 .quadrado {
-    background-color:#30A9D9;
+    background-color:#1295DB;
     flex-wrap: wrap;
     text-align: center;
     padding: 1px;
