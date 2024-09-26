@@ -1,200 +1,227 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> Página Inicial </title>
-    <link rel="stylesheet" href="style.css">
+    <title>Volei de Quadra</title>
+    <link rel="icon" type="image/png" href="img/volei-icon.png">
+    <link rel="stylesheet" href="reset.css">
     <style>
-        li{
-            text-decoration: none;
-            line-height: 1.5;
-            text-align: center;
-            list-style-type: none;
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+        html, body {
+            height: 100%;
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+            font-family: 'Poppins', sans-serif;
+            color: #333;
+            background-color: #fafafa;
         }
 
-        .imgcentro{
+        header {
+            width: 100%;
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: white;
             text-align: center;
-            margin: auto;
-            display: block;
-            width: 50%;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            position: fixed;
+            top: 0;
+            left: 0;
+            z-index: 1000;
+        }
+
+        header a {
+            color: white;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 1.2em;
+            display: inline-block;
+            padding: 10px 20px;
+            border-radius: 5px;
+            background-color: #0056b3;
+            transition: background-color 0.3s;
+        }
+
+        header a:hover {
+            background-color: #003d7a;
+        }
+
+        main {
+            flex: 1;
+            width: 90%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 80px 20px 20px;
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            gap: 20px;
+        }
+
+        .container {
+            display: flex;
+            width: 100%;
+            justify-content: space-between;
+        }
+
+        .image-gallery {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            width: 30%;
+        }
+
+        .image-gallery img {
+            width: 100%;
+            max-width: 300px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .abertura {
+            width: 40%;
+            animation: abrirPagina 1.5s ease-out forwards;
+            opacity: 0;
+        }
+
+        @keyframes abrirPagina {
+            0% {
+                opacity: 0;
+                transform: scale(0.9);
+            }
+            100% {
+                opacity: 1;
+                transform: scale(1);
+            }
+        }
+
+        h1 {
+            font-size: 2.5em;
+            color: #222;
+            margin-bottom: 0.5em;
+        }
+
+        p {
+            color: #555;
+            font-size: 1.1em;
+            line-height: 1.6;
+            margin-bottom: 1.5em;
+        }
+
+        .medalhas {
+            background-color: white;
+            border-radius: 8px;
+            padding: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            text-align: left;
+            font-size: 1.1em;
+            margin: 0 auto;
+            max-width: 700px;
+        }
+
+        .medalhas h1 {
+            font-size: 1.8em;
+            color: #007bff;
+            margin-bottom: 0.5em;
+        }
+
+        .medalhas ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .medalhas li {
+            margin-bottom: 10px;
+            padding-bottom: 5px;
+            border-bottom: 1px solid #eee;
+        }
+
+        footer {
+            width: 100%;
+            background-color: #007bff;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            font-size: 0.9em;
+            box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        footer h2 {
+            margin: 0;
+            font-size: 1.4em;
+            font-weight: 600;
+        }
+
+        footer ul {
+            list-style: none;
+            padding: 0;
+            margin: 10px 0 0;
+        }
+
+        footer li {
+            margin: 5px 0;
+        }
+
+        footer li b {
+            color: #f0f0f0;
         }
     </style>
 </head>
 <body>
-    <header> 
-       <img src="img/bambole.jpg" alt="" class="imgcentro">
-
-       <section>
-           <h1> OLIMPÍADAS 2024 </h1>
-           <h3> Modalidades </h3>
-           <ul>
-               <li> <a href="volei.html"> Volei de Quadra </a></li>
-               <li> <a href="futebol.html"> Futebol  </a></li>
-               <li> <a href="skate.html"> Skate </a></li>
-               <li> <a href="surf.html"> Surf  </a></li>
-               <li> <a href="tenis.html"> Tenis </a></li>
-               <li> <a href="atletismo.html"> Atletismo </a></li>
-               <li><a href="bmxfreestyle.html">  BMX FreeStyle</a> </li>
-               <li><a href="hipismo.html"> Hipismo </a></li>
-               <li><a href="tiroarco.html"> Tiro com Arco </a></li>
-               <li><a href="tiroesportivo.html"> Tiro Esportivo </a></li> 
-               <li><a href="natacao.html"> Natação </a></li> 
-               <li><a href="handebol.html"> Handebol </a></li> 
-               <li><a href="boxe.html"> Boxe </a></li> 
-               <li><a href="judo.html">Judo</a></li>
-           </ul>
-       </section>
-
+    <header>
+        <a href="index.html">Página Inicial</a>
     </header>
-
     <main>
-        <main>
-            <section>
-                <div class="flex">
-                    <div class="quadradoF">
-                        <div class="quadrado">
-                            <img class="imagem" src="morango.jpg">
-                            <p class="texto">Morango é considerado, na linguagem vulgar, como o fruto vermelho do morangueiro, da família das rosáceas. No entanto, em termos científicos não se pode considerar um fruto já que é constituído pelo receptáculo da flor original, em volta do qual se dispõem os frutos.
-                            </p>
-                        </div>
-                    </div>
-                    <div class="quadradoF">
-                        <div class="quadrado">
-                            <img class="imagem" src="icon.png">
-                            <p class="texto">FLEXBOX FLEXBOX FLEXBOX FLEXBOX FLEXBOX FLEXBOX FLEXBOX FLEXBOX FLEXBOX FLEXBOX
-                                FLEXBOX FLEXBOX
-                            </p>
-                        </div>
-                    </div>
-                    <div class="quadradoF">
-                        <div class="quadrado">
-                            <img class="imagem" src="icon.png">
-                            <p class="texto">FLEXBOX FLEXBOX FLEXBOX FLEXBOX FLEXBOX FLEXBOX FLEXBOX FLEXBOX FLEXBOX FLEXBOX
-                                FLEXBOX FLEXBOX
-                            </p>
-                        </div>
-                    </div>
-    
+        <div class="container">
+            <div class="image-gallery">
+                <img src="img/voleibol1.jpg" alt="Imagem de Voleibol 1">
+                <img src="img/voleibol2.jpg" alt="Imagem de Voleibol 2">
+            </div>
+            <div class="abertura">
+                <h1>Volei de Quadra</h1>
+                <p>
+                    O voleibol entrou nos Jogos Olímpicos de Paris (1924), porém como esporte demonstrativo. Foi apenas nas
+                    Olimpíadas de Tóquio (1964) que ele se tornou um esporte olímpico de competição. O país que mais ganhou
+                    medalhas no voleibol masculino em Jogos Olímpicos foi a extinta União Soviética.
+                </p>
+                <div class="medalhas">
+                    <h1>Voleibol Masculino:</h1>
+                    <ul>
+                        <li>União Soviética: 4 vezes (1964, 1968, 1980, 1988)</li>
+                        <li>Brasil: 3 vezes (1992, 2004, 2016)</li>
+                        <li>Estados Unidos: 3 vezes (1984, 1988, 2008)</li>
+                        <li>Iugoslávia: 1 vez (2000)</li>
+                        <li>Polônia: 1 vez (1976)</li>
+                    </ul>
+
+                    <h1>Voleibol Feminino:</h1>
+                    <ul>
+                        <li>Rússia: 2 vezes (1964 como União Soviética, 1980 como União Soviética)</li>
+                        <li>China: 3 vezes (1984, 2004, 2016)</li>
+                        <li>Cuba: 3 vezes (1992, 1996, 2000)</li>
+                        <li>Estados Unidos: 1 vez (2020)</li>
+                        <li>Coreia do Sul: 1 vez (1976)</li>
+                    </ul>
                 </div>
-                <div class="flex">
-                    <div class="quadradoF">
-                        <div class="quadrado">
-                            <img class="imagem" src="icon.png">
-                            <p class="texto">FLEXBOX FLEXBOX FLEXBOX FLEXBOX FLEXBOX FLEXBOX FLEXBOX FLEXBOX FLEXBOX FLEXBOX
-                                FLEXBOX FLEXBOX
-                            </p>
-                        </div>
-                    </div>
-                    <div class="quadradoF">
-                        <div class="quadrado">
-                            <img class="imagem" src="icon.png">
-                            <p class="texto">FLEXBOX FLEXBOX FLEXBOX FLEXBOX FLEXBOX FLEXBOX FLEXBOX FLEXBOX FLEXBOX FLEXBOX
-                                FLEXBOX FLEXBOX
-                            </p>
-                        </div>
-                    </div>
-                    <div class="quadradoF">
-                        <div class="quadrado">
-                            <img class="imagem" src="icon.png">
-                            <p class="texto">FLEXBOX FLEXBOX FLEXBOX FLEXBOX FLEXBOX FLEXBOX FLEXBOX FLEXBOX FLEXBOX FLEXBOX
-                                FLEXBOX FLEXBOX
-                            </p>
-                        </div>
-                    </div>
-    
-                </div>
-                <div class="flex">
-                    <div class="quadradoF">
-                        <div class="quadrado">
-                            <img class="imagem" src="icon.png">
-                            <p class="texto">FLEXBOX FLEXBOX FLEXBOX FLEXBOX FLEXBOX FLEXBOX FLEXBOX FLEXBOX FLEXBOX FLEXBOX
-                                FLEXBOX FLEXBOX
-                            </p>
-                        </div>
-                    </div>
-                    <div class="quadradoF">
-                        <div class="quadrado">
-                            <img class="imagem" src="icon.png">
-                            <p class="texto">FLEXBOX FLEXBOX FLEXBOX FLEXBOX FLEXBOX FLEXBOX FLEXBOX FLEXBOX FLEXBOX FLEXBOX
-                                FLEXBOX FLEXBOX
-                            </p>
-                        </div>
-                    </div>
-                    <div class="quadradoF">
-                        <div class="quadrado">
-                            <img class="imagem" src="icon.png">
-                            <p class="texto">FLEXBOX FLEXBOX FLEXBOX FLEXBOX FLEXBOX FLEXBOX FLEXBOX FLEXBOX FLEXBOX FLEXBOX
-                                FLEXBOX FLEXBOX
-                            </p>
-                        </div>
-                    </div>
-    
-                </div>
-                <div class="flex">
-                    <div class="quadradoF">
-                        <div class="quadrado">
-                            <img class="imagem" src="icon.png">
-                            <p class="texto">FLEXBOX FLEXBOX FLEXBOX FLEXBOX FLEXBOX FLEXBOX FLEXBOX FLEXBOX FLEXBOX FLEXBOX
-                                FLEXBOX FLEXBOX
-                            </p>
-                        </div>
-                    </div>
-                    <div class="quadradoF">
-                        <div class="quadrado">
-                            <img class="imagem" src="icon.png">
-                            <p class="texto">FLEXBOX FLEXBOX FLEXBOX FLEXBOX FLEXBOX FLEXBOX FLEXBOX FLEXBOX FLEXBOX FLEXBOX
-                                FLEXBOX FLEXBOX
-                            </p>
-                        </div>
-                    </div>
-                    <div class="quadradoF">
-                        <div class="quadrado">
-                            <img class="imagem" src="icon.png">
-                            <p class="texto">FLEXBOX FLEXBOX FLEXBOX FLEXBOX FLEXBOX FLEXBOX FLEXBOX FLEXBOX FLEXBOX FLEXBOX
-                                FLEXBOX FLEXBOX
-                            </p>
-                        </div>
-                    </div>
-    
-                </div>
-                <div class="flex">
-                    <div class="quadradoF">
-                        <div class="quadrado">
-                            <img class="imagem" src="icon.png">
-                            <p class="texto">FLEXBOX FLEXBOX FLEXBOX FLEXBOX FLEXBOX FLEXBOX FLEXBOX FLEXBOX FLEXBOX FLEXBOX
-                                FLEXBOX FLEXBOX
-                            </p>
-                        </div>
-                    </div>
-                    <div class="quadradoF">
-                        <div class="quadrado">
-                            <img class="imagem" src="icon.png">
-                            <p class="texto">FLEXBOX FLEXBOX FLEXBOX FLEXBOX FLEXBOX FLEXBOX FLEXBOX FLEXBOX FLEXBOX FLEXBOX
-                                FLEXBOX FLEXBOX
-                            </p>
-                        </div>
-                    </div>
-                    <div class="quadradoF">
-                        <div class="quadrado">
-                            <img class="imagem" src="icon.png">
-                            <p class="texto">FLEXBOX FLEXBOX FLEXBOX FLEXBOX FLEXBOX FLEXBOX FLEXBOX FLEXBOX FLEXBOX FLEXBOX
-                                FLEXBOX FLEXBOX
-                            </p>
-                        </div>
-                    </div>
-    
-                </div>
-            </section>
-    
-        </main>
+            </div>
+            <div class="image-gallery">
+                <img src="img/voleibol3.jpg" alt="Imagem de Voleibol 3">
+                <img src="img/voleibol4.jpg" alt="Imagem de Voleibol 4">
+            </div>
+        </div>
     </main>
-
-
-
-
     <footer>
-
+        <div>
+            <h2>OlimpíadasTec</h2>
+            <ul>
+                <li><b>Desenvolvido por:</b> Lucas Balceivcz</li>
+                <li><b>Fone:</b> (88) 99870-7070</li>
+                <li><b>Email:</b> Lucas.balcevicz@colegio.pr.gov.br</li>
+            </ul>
+        </div>
     </footer>
 </body>
 </html>
