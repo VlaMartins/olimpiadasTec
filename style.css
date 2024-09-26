@@ -92,7 +92,8 @@ body{
       background-image: url("img/menuAberto.png");
   }
   
-  .container__botao:checked~.container__rotulo { /*o fundo do botao fica na cor escolhida*/
+  .container__botao:checked~.container__rotulo { 
+    /*o fundo do botao fica na cor escolhida*/
       background: red;
   }
 
