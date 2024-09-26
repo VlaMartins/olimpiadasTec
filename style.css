@@ -8,7 +8,7 @@
 body{
     color: white;
     font-family: "Poppins", sans-serif;
-    background-color: black;
+    background-color: yellow;
 }
 
 .flex {
@@ -23,6 +23,7 @@ body{
     width: 10%;
 }
 
+/*imagens quadradas */
 .quadrado {
     background-color:#113c61;
     flex-wrap: wrap;
@@ -45,9 +46,6 @@ body{
     text-align: center;
     font-weight: 400;
 }
-
-
-
 
 
 /*HAMBURGUER*/
