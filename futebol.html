@@ -4,148 +4,150 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Futebol Olímpico</title>
-<style>
-.main-nav ul li a {
-    text-decoration: none;
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
 
-body {
-    font-family: 'Arial', sans-serif;
-    color: #9d1313;
-    background-image: url('');
-    background-size: cover;
-    background-position: center;
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
-}
+        body {
+            font-family: 'Arial', sans-serif;
+            color: #fff;
+            background-image: url('https://example.com/background.jpg'); /* Adicione uma imagem de fundo */
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
 
+        .site-header {
+            background-color: rgba(0, 0, 0, 0.8);
+            padding: 15px 30px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
 
-.site-header {
-    background-color: #000;
-    padding: 15px 30px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
-    position: sticky;
-    top: 0;
-    z-index: 1000;
-}
+        .logo img {
+            height: 60px;
+        }
 
-.logo img {
-    height: 60px;
-}
+        .main-nav ul {
+            list-style: none;
+            display: flex;
+        }
 
-.main-nav ul {
-    list-style: none;
-    display: flex;
-}
+        .main-nav ul li {
+            margin-right: 30px;
+        }
 
-.main-nav ul li {
-    margin-right: 30px;
-}
+        .main-nav ul li a {
+            text-decoration: none;
+            color: #fff;
+            font-weight: bold;
+            font-size: 18px;
+            transition: color 0.3s ease;
+        }
 
-.main-nav ul li a {
-    text-decoration: none;
-    color: #fff;
-    font-weight: bold;
-    font-size: 18px;
-    transition: color 0.3s ease;
-}
+        .main-nav ul li a:hover {
+            color: #ffcc00;
+        }
 
-.main-nav ul li a:hover {
-    color: #ffcc00;
-}
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 20px 0;
+        }
 
+        .imgicone {
+            max-width: 50%;
+            height: auto;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+        }
 
-.container {/* Global styles */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
+        main {
+            flex: 1;
+            padding: 20px;
+            background: rgba(0, 0, 0, 0.7);
+            border-radius: 10px;
+            margin: 20px auto;
+            max-width: 1200px;
+        }
 
-body {
-    font-family: 'Arial', sans-serif;
-    color: #fff;}
+        .info h1 {
+            font-size: 2.5em;
+            margin-bottom: 20px;
+            font-family: 'Arial Black', sans-serif;
+            color: #ffcc00;
+            text-align: center;
+        }
 
+        .info p {
+            line-height: 1.6;
+            font-size: 1.1em;
+            text-align: justify;
+            margin-bottom: 20px;
+        }
 
-footer ul li {
-    margin-bottom: 10px;
-    font-size: 1.1em;
-}
+        footer {
+            background-color: rgba(0, 0, 0, 0.8);
+            padding: 20px;
+            text-align: center;
+            box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.5);
+            color: #fff;
+            position: relative;
+        }
 
-footer ul li b {
-    color: #ffcc00;
-}
+        footer h1 {
+            margin-bottom: 15px;
+            font-size: 2em;
+            font-family: 'Arial Black', sans-serif;
+            color: #ffcc00;
+        }
 
-.imgicone {
-    max-width: 50%; 
-    height: auto;
-    border-radius: 10px;
-}
+        footer ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
 
+        footer ul li {
+            margin-bottom: 10px;
+            font-size: 1.1em;
+        }
 
-main {
-    flex: 1;
-    padding: 20px;
-    background: rgba(0, 0, 0, 0.7); 
-    border-radius: 10px;
-    margin: 20px auto;
-    max-width: 1200px;
-}
+        footer ul li b {
+            color: #ffcc00;
+        }
 
-.info h1 {
-    font-size: 2.5em;
-    margin-bottom: 20px;
-    font-family: 'Arial Black', sans-serif;
-    color: #ffcc00;
-    text-align: center;
-}
+        @media (max-width: 768px) {
+            .main-nav ul {
+                flex-direction: column;
+                align-items: center;
+            }
 
-.info p {
-    line-height: 1.6;
-    font-size: 1.1em;
-    text-align: justify;
-    margin-bottom: 20px;
-}
+            .main-nav ul li {
+                margin-bottom: 10px;
+            }
 
-footer {
-    background-color: #000;
-    padding: 20px;
-    text-align: center;
-    box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.5);
-    color: #fff;
-    position: relative;
-}
+            .imgicone {
+                max-width: 80%;
+            }
 
-footer h1 {
-    margin-bottom: 15px;
-    font-size: 2em;
-    font-family: 'Arial Black', sans-serif;
-    color: #ffcc00;
-}
-
-footer ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-}
-
-footer ul li {
-    margin-bottom: 10px;
-    font-size: 1.1em;
-}
-
-footer ul li b {
-    color: #ffcc00;
-}
-
-</style>
+            main {
+                margin: 10px;
+                padding: 10px;
+            }
+        }
+    </style>
 </head>
 
 <body>
