@@ -134,6 +134,7 @@ body{
 .lista-menu__titulo, .lista-menu__item { /*o titulo MODALIDADE e todos os itens (MODALIDADES) irao ter recuo*/
     padding: 1em;
     background-color:black;
+    color: pink;
 }
 
   
