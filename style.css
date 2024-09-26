@@ -27,7 +27,6 @@ body{
     background-color:#113c61;
     flex-wrap: wrap;
     text-align: center;
-    padding: 2px;
 }
 
 .quadrado:hover{
