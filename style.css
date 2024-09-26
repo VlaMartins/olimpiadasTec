@@ -107,7 +107,7 @@ body{
     position: absolute;
     top: 100%;
     width: 25vw; /*largura do menu */
-    background-color:  rgb(117, 175, 30);
+    background-color: #083359;
     list-style-type: none;
 }
 
