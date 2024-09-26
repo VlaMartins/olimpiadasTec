@@ -51,7 +51,7 @@ body{
 /*HAMBURGUER*/
 
 .cabecalho{
-    background-color: #0D0D0D;
+    background-color: pink;
     display: flex;
     justify-content: space-between;
     align-items: center;
