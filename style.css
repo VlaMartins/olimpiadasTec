@@ -72,8 +72,6 @@ footer ul li{
 }
 
 
-
-
 /*barra em cima*/
   .site-header {
     background-color: #083359;
@@ -111,3 +109,91 @@ footer ul li{
 .main-nav ul li a:hover {
 color: #ffcc00;
 }
+
+
+
+/* MENU hamburguer */
+.cabeçalho{
+    background-color: #0D0D0D;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
+.container{
+    display: flex;
+    align-items: center;
+}
+
+.container__botao {
+    display: none;
+}
+
+.cabeçalho__menu-hamburguer{
+    width: 24px;
+    height: 24px;
+    background-image: url(img/Menu.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    display: inline-block;
+}
+
+.container__imagem{
+    padding: 1em;
+    justify-content: right;
+}
+
+.container__titulo {
+    display: none;
+}
+
+.container__botao:checked~.container__rotulo>.cabeçalho__menu-hamburguer {
+    /*esconde e mostra o menu*/
+    background-image: url("img/Menu\ Aberto.png");
+}
+
+.container__botao:checked~.container__rotulo { 
+    background: rgb(169, 16, 16);
+}
+
+.lista-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    width: 20vw;
+}
+
+.container__botao:checked~.lista-menu {
+    display: block;
+}
+
+.lista-menu__titulo,
+.lista-menu__item {
+    padding: 1em;
+    background-color:black;
+}
+
+.lista-menu__titulo {
+    color: orangered;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.lista-menu__link {
+    font-size: 18px;
+    color: #F2A30F;
+}
+
+
+.lista-menu__link:hover {
+    background-color: yellow;
+}
+
+/* tmas olipicos */
+
+/* vermelho #F22738
+azul #0487D9
+verde #03A64A
+amarelo #F2A30F
+preto #0D0D0D */
