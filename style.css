@@ -72,45 +72,6 @@ footer ul li{
 }
 
 
-/*barra em cima*/
-  .site-header {
-    background-color: #083359;
-    padding: 15px 30px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
-    position: sticky;
-    top: 0;
-    z-index: 1000;
-}
-
-.logo img {
-    width: 60px;
-}
-
-.main-nav ul {
-    list-style: none;
-    display: flex;
-}
-
-.main-nav ul li {
-    margin-right: 30px;
-}
-
-.main-nav ul li a {
-    text-decoration: none;
-    color: #fff;
-    font-weight: bold;
-    font-size: 18px;
-    transition: color 0.3s ease;
-}
-
-.main-nav ul li a:hover {
-color: #ffcc00;
-}
-
-
 .cabecalho{
     background-color: #0D0D0D;
     display: flex;
