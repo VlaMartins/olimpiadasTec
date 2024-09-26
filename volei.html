@@ -58,30 +58,32 @@
             justify-content: center;
             align-items: flex-start;
             gap: 20px;
+            flex-wrap: wrap;
         }
 
         .container {
             display: flex;
             width: 100%;
             justify-content: space-between;
+            gap: 20px;
         }
 
         .image-gallery {
             display: flex;
             flex-direction: column;
             gap: 20px;
-            width: 30%;
+            flex: 1;
+            max-width: 300px;
         }
 
         .image-gallery img {
-            width: 500px;
-            max-width: 500px;
+            width: 100%;
             border-radius: 8px;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
         }
 
         .abertura {
-            width: 40%;
+            flex: 2;
             animation: abrirPagina 1.5s ease-out forwards;
             opacity: 0;
         }
