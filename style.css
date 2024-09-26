@@ -12,7 +12,7 @@ body{
 }
 
 .flex {
-    background-color:#083359; 
+    background-color:black; 
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
