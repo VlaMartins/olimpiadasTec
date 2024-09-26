@@ -69,9 +69,9 @@ body{
 
 /*cria o icone do menu hamburguer e coloca dentro do header*/
 .cabecalho__menu-hamburguer{     
-    width: 24px;
+     width: 24px;
      height: 24px;
-     background-image: url(img/menu.svg);
+     background-image: url(img/Menu.svg);
      background-repeat: no-repeat;
      background-position: center;
      display: inline-block;
@@ -82,11 +82,11 @@ body{
     padding: 2em;
 }
 
-.container__titulo {
+/* .container__titulo {
     display: flex;/*REVER POR QUE FUI EU QUEM PUS*/
     color: greenyellow;
-    padding-left: 1em;
-}
+    /* padding-left: 1em;
+} */ */
 
 .container__botao:checked~.container__rotulo>.cabecalho__menu-hamburguer {  
     /*esconde e mostra o menu*/
