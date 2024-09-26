@@ -24,7 +24,7 @@ body{
 }
 
 .quadrado {
-    background-color:#1295DB;
+    background-color:#db12c4;
     flex-wrap: wrap;
     text-align: center;
     padding: 1px;
@@ -53,7 +53,7 @@ footer{
     height: 6em;
     bottom: 0px;
     color: white;
-    background-color:#0487D9;
+    background-color:#083359;
 }
 
 footer ul{
