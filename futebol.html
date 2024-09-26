@@ -14,7 +14,6 @@
         body {
             font-family: 'Arial', sans-serif;
             color: #fff;
-            background-image: url('https://example.com/background.jpg'); /* Adicione uma imagem de fundo */
             background-size: cover;
             background-position: center;
             display: flex;
@@ -146,6 +145,14 @@
                 margin: 10px;
                 padding: 10px;
             }
+            .imgfundo {
+            background-image: url('img/img-fut1.jpg'); /* Altere para o caminho correto da sua imagem */
+            background-size: cover;
+            background-position: center;
+            min-height: 100vh; /* Garante que cubra a altura total da janela */
+            display: flex;
+            flex-direction: column;
+}
         }
     </style>
 </head>
@@ -154,6 +161,7 @@
     <header class="site-header">
         <div class="logo">
             <img src="/img/Fut-icon.png" alt="Logo Olímpico"> 
+            <img class="imgfundo" src="/img/Img-fut1.jpg" alt="Imagem Do Fundo">
         </div>
         <nav class="main-nav">
             <ul>
