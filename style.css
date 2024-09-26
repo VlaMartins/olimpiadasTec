@@ -38,6 +38,7 @@ body{
 
 .imagem{
     width: 280px; 
+    padding: 1px;
 }
 
 .texto{
