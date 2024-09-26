@@ -47,29 +47,7 @@ body{
 }
 
 
-/*RODAPE */
-footer{
-    width: 100%;
-    height: 6em;
-    bottom: 0px;
-    color: white;
-    background-color:#083359;
-}
 
-footer ul{
-    margin-bottom: 1em;
-}
-
-footer h2{
-    padding-top: 10px;
-    color:white;
-    text-align: center;
-}
-
-footer ul li{
-    color: #e0ba74;
-    text-align: center;
-}
 
 
 /*HAMBURGUER*/
@@ -170,3 +148,28 @@ azul #0487D9
 verde #03A64A
 amarelo #F2A30F
 preto #0D0D0D */
+
+
+/*RODAPE */
+footer{
+    width: 100%;
+    height: 6em;
+    bottom: 0px;
+    color: white;
+    background-color:#083359;
+}
+
+footer ul{
+    margin-bottom: 1em;
+}
+
+footer h2{
+    padding-top: 10px;
+    color:white;
+    text-align: center;
+}
+
+footer ul li{
+    color: #e0ba74;
+    text-align: center;
+}
