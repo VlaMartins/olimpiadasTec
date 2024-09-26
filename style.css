@@ -12,7 +12,7 @@ body{
 }
 
 .flex {
-    background-color:#063573; 
+    background-color:#083359; 
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
@@ -22,6 +22,7 @@ body{
 .imgcentro{
     width: 10%;
 }
+
 .quadrado {
     background-color:#1295DB;
     flex-wrap: wrap;
