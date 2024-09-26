@@ -51,7 +51,7 @@ body{
 /*HAMBURGUER*/
 
 .cabecalho{
-    background-color: pink;
+    background-color: #083359;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -137,17 +137,6 @@ body{
 }
 
   
-
-
-/* tmas olipicos */
-
-/* vermelho #F22738
-azul #0487D9
-verde #03A64A
-amarelo #F2A30F
-preto #0D0D0D */
-
-
 /*RODAPE */
 footer{
     width: 100%;
