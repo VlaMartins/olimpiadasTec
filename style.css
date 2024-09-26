@@ -64,7 +64,7 @@ body{
 }
 
 .container__botao { /*esconde o botãozinho do check*/
-    display: none;
+    /* display: none; */
 }
 
 /*cria o icone do menu hamburguer e coloca dentro do header*/
