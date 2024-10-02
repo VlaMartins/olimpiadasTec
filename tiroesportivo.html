@@ -103,6 +103,39 @@ footer ul li {
 }
 
     </style>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+    const sections = document.querySelectorAll("section");
+    const options = {
+        root: null,
+        rootMargin: "0px",
+        threshold: 0.1
+    };
+
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add("visible");
+            }
+        });
+    }, options);
+
+    sections.forEach(section => {
+        observer.observe(section);
+    });
+
+    const animateButton = document.getElementById("animateButton");
+    animateButton.addEventListener("click", function () {
+        alert("Você clicou no botão!");
+        animateButton.classList.add("animate");
+        setTimeout(() => {
+            animateButton.classList.remove("animate");
+        }, 500);
+    });
+});
+
+    </script>
 </head>
 
 <head>
