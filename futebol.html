@@ -1,199 +1,145 @@
-<!DOCTYPE html>
-<html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Futebol Olímpico</title>
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
-        body {
-            font-family: 'Arial', sans-serif;
-            color: #fff;
-            background-size: cover;
-            background-position: center;
-            display: flex;x
-            flex-direction: column;
-            min-height: 100vh;
-        }
+body {
+    font-family: 'Arial', sans-serif;
+    color: #fff;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
 
-        .site-header {
-            background-color: rgba(0, 0, 0, 0.8);
-            padding: 15px 30px;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
-            position: sticky;
-            top: 0;
-            z-index: 1000;
-        }
+.site-header {
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 15px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
 
-        .logo img {
-            height: 60px;
-        }
+.logo img {
+    height: 60px;
+}
 
-        .main-nav ul {
-            list-style: none;
-            display: flex;
-        }
+.main-nav ul {
+    list-style: none;
+    display: flex;
+}
 
-        .main-nav ul li {
-            margin-right: 30px;
-        }
+.main-nav ul li {
+    margin-right: 30px;
+}
 
-        .main-nav ul li a {
-            text-decoration: none;
-            color: #fff;
-            font-weight: bold;
-            font-size: 18px;
-            transition: color 0.3s ease;
-        }
+.main-nav ul li:last-child {
+    margin-right: 0; /* Remove margem do último item */
+}
 
-        .main-nav ul li a:hover {
-            color: #ffcc00;
-        }
+.main-nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    font-size: 18px;
+    transition: color 0.3s ease;
+}
 
-        .container {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            margin: 20px 0;
-        }
+.main-nav ul li a:hover {
+    color: #ffcc00;
+}
 
-        .imgicone {
-            max-width: 50%;
-            height: auto;
-            border-radius: 10px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
-        }
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0;
+}
 
-        main {
-            flex: 1;
-            padding: 20px;
-            background: rgba(0, 0, 0, 0.7);
-            border-radius: 10px;
-            margin: 20px auto;
-            max-width: 1200px;
-        }
+.imgicone {
+    max-width: 50%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+}
 
-        .info h1 {
-            font-size: 2.5em;
-            margin-bottom: 20px;
-            font-family: 'Arial Black', sans-serif;
-            color: #ffcc00;
-            text-align: center;
-        }
-       
-        .info p {
-            line-height: 1.6;
-            font-size: 1.1em;
-            text-align: justify;
-            margin-bottom: 20px;
-        }
+main {
+    flex: 1;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.7);
+    border-radius: 10px;
+    margin: 20px auto;
+    max-width: 1200px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); /* Adicione sombra para profundidade */
+}
 
-        footer {
-            background-color: rgba(0, 0, 0, 0.8);
-            padding: 20px;
-            text-align: center;
-            box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.5);
-            color: #fff;
-            position: relative;
-        }
+.info h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    font-family: 'Arial Black', sans-serif;
+    color: #ffcc00;
+    text-align: center;
+}
 
-        footer h1 {
-            margin-bottom: 15px;
-            font-size: 2em;
-            font-family: 'Arial Black', sans-serif;
-            color: #ffcc00;
-        }
+.info p {
+    line-height: 1.6;
+    font-size: 1.1em;
+    text-align: justify;
+    margin-bottom: 20px;
+}
 
-        footer ul {
-            list-style: none;
-            padding: 0;
-            margin: 0;
-        }
+footer {
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.5);
+    color: #fff;
+}
 
-        footer ul li {
-            margin-bottom: 10px;
-            font-size: 1.1em;
-        }
+footer h1 {
+    margin-bottom: 15px;
+    font-size: 2em;
+    font-family: 'Arial Black', sans-serif;
+    color: #ffcc00;
+}
 
-        footer ul li b {
-            color: #ffcc00;
-        }
+footer ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
 
-        @media (max-width: 768px) {
-            .main-nav ul {
-                flex-direction: column;
-                align-items: center;
-            }
+footer ul li {
+    margin-bottom: 10px;
+    font-size: 1.1em;
+}
 
-            .main-nav ul li {
-                margin-bottom: 10px;
-            }
+footer ul li b {
+    color: #ffcc00;
+}
 
-            .imgicone {
-                max-width: 80%;
-            }
+@media (max-width: 768px) {
+    .main-nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
 
-            main {
-                margin: 10px;
-                padding: 10px;
-            }
-        }
-    </style>
-</head>
+    .main-nav ul li {
+        margin-bottom: 10px;
+    }
 
-<body>
-    <header class="site-header">
-        <div class="logo">
-            <img src="/img/Fut-icon.png" alt="Logo Olímpico"> 
-            <img src="/img/Img-fut1.jpg" alt="">
-            <img class="imgfundo" src="/img/Img-fut1.jpg" alt="Imagem Do Fundo">
-        </div>
-        <nav class="main-nav">
-            <ul>
-                <li><a href="index.html">Página Inicial</a></li>
-                <li><a href="https://olympics.com/pt/paris-2024/esportes/futebol">Saiba Mais</a></li>
-            </ul>
-        </nav>
-    </header>
+    .imgicone {
+        max-width: 80%;
+    }
 
-    <div class="container">
-        <img src="/img/Fut-icon.png" alt="Ícone das Olimpíadas" class="imgicone">
-    </div>
-
-    <main>
-        <section class="info">
-            <h1>Futebol Olímpico</h1>
-            <p><strong>O futebol olímpico</strong> é uma competição realizada durante os Jogos Olímpicos, ocorrendo a cada quatro anos. Este torneio possui algumas peculiaridades em relação ao futebol de outras competições.</p>
-
-            <p><strong>Categorias de Idade:</strong> No futebol masculino dos Jogos Olímpicos de Verão, a competição é restrita a jogadores com menos de 23 anos, com a possibilidade de incluir até três jogadores acima dessa faixa etária, conhecidos como "jogadores experientes". Essa regra foi criada para enfatizar o desenvolvimento de jovens talentos.</p>
-
-            <p><strong>Futebol Feminino:</strong> No futebol feminino olímpico, não há restrições de idade. As equipes podem contar com qualquer jogadora, tornando o torneio um palco importante para as melhores atletas do mundo.</p>
-
-            <p><strong>História:</strong> O futebol foi incluído na programação dos Jogos Olímpicos desde a primeira edição dos Jogos modernos em 1896. No entanto, o torneio masculino foi oficialmente incluído em 1900 e, depois, removido até 1904. O torneio feminino foi adicionado em 1996.</p>
-
-            <p><strong>Importância:</strong> Apesar de não ter o mesmo prestígio que a Copa do Mundo da FIFA, o futebol olímpico ainda é uma competição significativa, proporcionando visibilidade e oportunidades para jogadores jovens e promovendo o esporte em nível global.</p>
-
-            <p><strong>Regulamentação:</strong> As regras do futebol olímpico seguem as normas do futebol internacional, com algumas adaptações para se adequar ao formato da competição.</p>
-
-            <p>O torneio olímpico serve como um trampolim importante para jogadores e jogadoras, oferecendo uma chance de brilhar no cenário internacional e atuando como uma vitrine para o desenvolvimento de futuras estrelas do esporte.</p>
-        </section>
-    </main>
-
-    <footer>
-        <h1>Olimpíadas<i>Tec</i></h1>
-        <ul>
-            <li><b>Desenvolvido por:</b> Gabriel Fogaça</li>
-            <li><b>Telefone:</b> (43) 4 4002-8922</li>
-            <li><b>Email:</b> Gabriel@escola.pr.gov.br</li>
-        </ul>
-    </footer>
-</body>
-</html>
+    main {
+        margin: 10px;
+        padding: 10px;
+    }
+}
