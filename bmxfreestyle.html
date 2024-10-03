@@ -4,210 +4,156 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>ciclismo bmx freestyle</title>
-  
- 
-</head>
-
-<body> 
-<button class="button" data-text="Awesome">
- <ul> <span></li> <a href="index.html"></a>pagina<li></span></ul>
-    <span class="actual-text">&nbsp;&nbsp;</span>
-    <span aria-hidden="true" class="hover-text">&nbsp;<span></li><a href="index.html">Pagina inicial</a><li></li>&nbsp;</span>
-</button>
-  <style> 
-/* === removing default button style ===*/
-.button {
-  margin: 0;
-  height: auto;
-  background: transparent;
-  padding: 0;
-  border: none;
-  cursor: pointer;
-}
-
-/* button styling */
-.button {
-  --border-right: 6px;
-  --text-stroke-color: rgba(255,255,255,0.6);
-  --animation-color: #37FF8B;
-  --fs-size: 2em;
-  letter-spacing: 3px;
-  text-decoration: none;
-  font-size: var(--fs-size);
-  font-family: "Arial";
-  position: relative;
-  text-transform: uppercase;
-  color: transparent;
-  -webkit-text-stroke: 1px var(--text-stroke-color);
-}
-/* this is the text, when you hover on button */
-.hover-text {
-  position: absolute;
-  box-sizing: border-box;
-  content: attr(data-text);
-  color: var(--animation-color);
-  width: 0%;
-  inset: 0;
-  border-right: var(--border-right) solid var(--animation-color);
-  overflow: hidden;
-  transition: 0.5s;
-  -webkit-text-stroke: 1px var(--animation-color);
-}
-/* hover */
-.button:hover .hover-text {
-  width: 100%;
-  filter: drop-shadow(0 0 23px var(--animation-color))
-}
-  </style>
+  <title>Ciclismo BMX Freestyle</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&family=Poppins:wght@300&display=swap" rel="stylesheet">
   <style>
-    h1, h2, h3 {
-  font-family: Montserrat, Arial Black, Bebas Neue, sans-serif;
-  font-weight: bold;
-}
     body {
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
       background-color: #000;
       color: #fff;
-      footer{
-        width: 100%;
-        bottom: 0px;
-        color: #fff;
-        background-color: blueviolet;
-        }
-        footer ul{
-          margin-bottom: 3em;
+      animation: fadeIn 1.5s;
+    }
+
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
       }
-      footer h2{
-        padding-top: 10px;
-        color: #fff;
-        text-align: center;
-      }
-      footer ul li{
-        color:#e0ba74 ;
-        text-align: center;
-        list-style: none;
+      to {
+        opacity: 1;
       }
     }
+
+    header {
+      text-align: center;
+      margin: 20px 0;
+    }
+
+    h1 {
+      font-family: 'Montserrat', sans-serif;
+      font-size: 3em;
+      color: #37FF8B;
+      text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+    }
+
+    img {
+      width: 100%;
+      max-width: 600px;
+      border-radius: 10px;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.7);
+      margin: 20px auto;
+      display: block;
+      animation: zoomIn 1s ease forwards;
+    }
+
+    @keyframes zoomIn {
+      0% {
+        transform: scale(0.8);
+        opacity: 0;
+      }
+      100% {
+        transform: scale(1);
+        opacity: 1;
+      }
+    }
+
+    p, h2, h3 {
+      text-align: center;
+      margin: 0 15px;
+      padding: 10px;
+      transition: transform 0.3s;
+    }
+
+    p:hover, h2:hover, h3:hover {
+      transform: scale(1.05);
+    }
+
+    footer {
+      background-color: blueviolet;
+      color: #fff;
+      text-align: center;
+      padding: 20px 0;
+      margin-top: 20px;
+    }
+
+    footer ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    footer li {
+      margin: 5px 0;
+      color: #e0ba74;
+    }
+
+    .button {
+      display: inline-block;
+      margin: 20px auto;
+      padding: 15px 30px;
+      font-size: 1.5em;
+      color: transparent;
+      background: transparent;
+      border: 3px solid #37FF8B;
+      border-radius: 5px;
+      position: relative;
+      text-transform: uppercase;
+      cursor: pointer;
+      text-decoration: none;
+      transition: all 0.4s;
+    }
+
+    .button:hover {
+      background-color: rgba(55, 255, 139, 0.2);
+    }
+
+    .hover-text {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      left: 0;
+      top: 0;
+      background: #37FF8B;
+      z-index: -1;
+      transition: all 0.4s;
+      opacity: 0;
+    }
+
+    .button:hover .hover-text {
+      opacity: 1;
+    }
   </style>
+</head>
+
+<body>
   <header>
-    <h1> Sobre o ciclismo bmx freestyle</h1>
+    <h1>Sobre o Ciclismo BMX Freestyle</h1>
   </header>
-  <img src="img/bmxfreestyle2" alt="capa">
-  <p>O ciclismo BMX freestyle nasce do imaginário de crianças e adolescentes da Califórnia na década de 1970, que se
-    inspiraram nos movimentos dos pilotos de BMX Racing da região. O esporte tornou-se cada vez mais popular nas décadas
-    seguintes e foi integrado aos programas de competições de esportes radicais, incluindo o X-Games nos anos 2000 e o
-    FISE (Festival Internacional de Esportes Radicais). A primeira Copa do Mundo de BMX Freestyle foi organizada pelo
-    órgão regulador do ciclismo, a União Ciclística Internacional (UCI), em 2016, como parte da FISE daquele ano.</p>
-  <h2>BREVE RESUMO DAS REGRAS </h2>
-  <p>competição de BMX freestyle acontecerá em um parque urbano, onde os pilotos realizarão o máximo de manobras
-    possíveis em 60 segundos. Eles serão pontuados com base na dificuldade das manobras, na altura dos saltos e na
-    criatividade e estilo de suas apresentações.</p>
-  <img src="img/bmxfreestyle" alt="ciclismo bmx freestyle paris 2024">
-  <h3>HISTÓRIA OLÍMPICA</h3>
-  <p>O BMX freestyle surgiu no palco Olímpico pela primeira vez nos Jogos Olímpicos da Juventude de 2018, em Buenos
-    Aires. Ele ofereceu um espetáculo emocionante diante de uma multidão, convencendo o COI do potencial definitivo
-    deste esporte urbano.
-    O Brasil tem um rep(43) 9-9116-1635resentante na modalidade, Gustavo "Bala Loka" Oliveira, que já fez história ao chegar nos Jogos
-    Olímpicos Paris 2024 e sai da competição entre os melhores do mundo em sua modalidade.
 
-    O ciclismo BMX freestyle é uma modalidade que exige habilidade, força e resistência. Os atletas precisam ter uma boa
-    técnica e equilíbrio para realizar as manobras com segurança e eficiência.
+  <img src="img/bmxfreestyle2.jpg" alt="Capa do BMX Freestyle">
 
-    O BMX freestyle retorna à segunda edição dos Jogos Olímpicos em Paris 2024 após fazer sua estreia competitiva em
-    Tóquio 2020.</p>
+  <p>O ciclismo BMX freestyle nasce do imaginário de crianças e adolescentes da Califórnia na década de 1970, que se inspiraram nos movimentos dos pilotos de BMX Racing da região...</p>
 
-  <p>O ciclismo BMX freestyle é uma modalidade de ciclismo que envolve acrobacias e manobras em bicicletas BMX. É uma
-    modalidade que requer habilidade, equilíbrio e coragem.
-  </p>
-  <h3>O BMX freestyle é dividido em 7 modalidades, cada uma com suas próprias características e desafios. As modalidades
-    incluem</h3>
-  <ul>
-    <li><i>Street: envolve manobras em ruas e calçadas</i></li>
-    <li><i>Park: envolve manobras em parques e áreas fechadas</i></li>
-    <li><i>Vert: envolve manobras em rampas verticais</i></li>
-    <li><i>Dirt: envolve manobras em trilhas de terra</i></li>
-    <li><i>Flatland: envolve manobras em superfícies planas</i></li>
-    <li><i>Cruising: envolve passeios em bicicleta em áreas urbanas</i></li> position: absolute;
-    bottom: 0;
-    width: 100%;
-    <li><i>Racing: envolve corridas em pistas fechadas</i></li>
-  </ul>
-  <p>
-    <b> visão geral de como funciona a competição BMX Freestyle nas Olimpíadas:</b>
+  <h2>Breve Resumo das Regras</h2>
+  <p>A competição de BMX freestyle acontecerá em um parque urbano, onde os pilotos realizarão o máximo de manobras possíveis em 60 segundos...</p>
 
-  <p> <b>Formato da competição:</b></p>
+  <img src="img/bmxfreestyle.jpg" alt="Ciclismo BMX Freestyle Paris 2024">
 
-  <li> Fase de qualificação: todos os pilotos</li>
-  <li>Rodada Final:O topo</li>
-  <li>Runs: Cada piloto tem um número determinado de “runs” ou passagens, onde ele executa suas manobras. A pontuação é
-    dada com base na qualidade e dificuldade das manobras realizadas. </li>
-  <li> Jams: Em competições de jam, os pilotos se revezam em um período de tempo fixo e podem competir ao mesmo tempo,
-    com o objetivo de mostrar suas habilidades.</li>
-  <p><b>Pontuação:</b> </p>
+  <h3>História Olímpica</h3>
+  <p>O BMX freestyle surgiu no palco Olímpico pela primeira vez nos Jogos Olímpicos da Juventude de 2018, em Buenos Aires...</p>
 
-  <li> Dificuldade do truque: Riders</li>
-  <li> Execução: Cavaleiros</li>
-  <li>Variedade: Cavaleiros</li>
-  <li>Fluxo: Os pilotos são</li>
-  <p><b>Critérios de julgamento:</b></p>
+  <a href="index.html" class="button">
+    <span class="hover-text"></span>
+    Página Inicial
+  </a>
 
-  <li>Dificuldade: A complexidade dos truques realizados é fundamental. Truques mais desafiadores e avançados geralmente
-    recebem uma pontuação mais alta. Isso inclui a combinação de vários truques, a  position: absolute;
-    bottom: 0;
-    width: 100%;execução de manobras raras e a
-    realização de variações criativas.</li>
-  <li> Execução: A maneira como o truque é executado é crucial. Isso inclui a fluidez do movimento, a precisão no
-    momento do salto e a aterrissagem. Truques executados de forma limpa, com controle e sem erros tendem a ser mais bem
-    avaliados. </li>
-  <li> Originalidade e Criatividade: A inovação e a criatividade desempenham um papel importante. Juízes valorizam os
-    ciclistas que introduzem novas manobras, combinações e estilos únicos, contribuindo para o avanço do esporte.</li>
-  <li>Estilo: O estilo pessoal e a apresentação são aspectos importantes. Isso abrange a forma como o ciclista se
-    movimenta, sua atitude durante a performance e a forma geral como ele faz os truques parecerem naturais e fluidos.
-  </li>
-  <li>Compensação de Risco: Realizar truques arriscados com sucesso é altamente valorizado. A habilidade de executar
-    manobras de alto risco de forma segura e consistente pode impactar positivamente a pontuação.</li>
-  <li>Duração e Complexidade da Rotina: Em competições onde uma rotina completa é realizada, a duração e a complexidade
-    da rotina são avaliadas. Uma rotina bem planejada e com uma boa variedade de truques pode melhorar a pontuação.</li>
-  <li>Aterrissagem: A forma como o ciclista aterrissa é um aspecto importante. Aterrissagens suaves e controladas são
-    preferíveis, e quedas ou aterrissagens desajeitadas podem reduzir a pontuação.</li>
-  <li>Amplitude e Altura: A amplitude e a altura dos saltos são considerados. Truques realizados em maiores alturas e
-    com maior amplitude geralmente são mais impressionantes.</li>
-  <li>Transições e Conexões: A forma como os truques são conectados e as transições entre eles são avaliadas. Uma rotina
-    que flui bem, com transições suaves entre diferentes manobras, é mais bem pontuada. </li>
-
-  <p><b>Características do parque:</b></p>
-
-  <p> <b>O parque Olímpico BMX Freestyle apresenta uma variedade de obstáculos, incluindo:</b></p>
-
-  <li>Saltos : Rampas que permitem aos pilotos realizar acrobacias e truques aéreos </li>
-  <li>Quarter Pipes : Rampas curvas que os pilotos podem usar para executar manobras e combinações </li>
-  <li>Bowls : Depressões no solo por onde os cavaleiros podem entrar e sair, realizando manobras e acrobacias. </li>
-  <li>Rampas : Planos inclinados que os pilotos podem usar para ganhar velocidade e executar saltos e manobras</li>
-  <li>Características da rua : obstáculos que imitam ambientes urbanos, como escadas, corrimãos e saliências</li>
-  <li>Vulcão : Uma grande plataforma elevada com uma borda curva da qual os passageiros podem pular</li>
-  <li>Espinhos : plataformas estreitas e elevadas nas quais os cavaleiros podem andar e realizar manobras</li>
-  <li>allrides : Paredes verticais nas quais os pilotos podem andar e fazer manobras</li>
-  <p><b>Regras:</b></p>
-
-  <li> Park: Competição em pistas com rampas, bowls e obstáculos. </li>
-  <li> Street: Manobras realizadas em ambientes urbanos, como corrimãos, bancos e escadas.</li>
-  <li> Dirt: Saltos em rampas de terra, com foco em manobras aéreas e acrobacias. </li>
-  <li> Flatland: Manobras técnicas e complexas realizadas em superfícies planas.</li>
-  <li>Os ciclistas devem usar equipamentos de segurança aprovados, incluindo capacete, joelheiras e cotoveleiras.</li>
-  <li>Os ciclistas devem começar e terminar cada corrida dentro da área de competição designada.</li>
-  <li>Os pilotos não estão autorizados a tocar ou interferir com outros pilotos durante a competição</li>
-  <li>Os competidores não estão autorizados a realizar manobras que danifiquem intencionalmente a área de competição ou o equipamento.</li>
-  <p> Ao combinar esses elementos, a competição BMX Freestyle nas Olimpíadas mostra as habilidades, a criatividade e o estilo dos ciclistas em um formato emocionante e de alta energia.</p>
-
-<footer>
-  <h2>Olimpíadas <i>TEC</i></h2>
-  <ul>
-    <li><b>Desenvolvido por:</b>Alan E vlá</li>
-    <li><b>fone:</b> (43) 2370-8794 </li>
-    <li><b>Email:</b>Alan.macena@colégio.pr.gov.br</li>
-  </ul>
-</footer>
-
+  <footer>
+    <h2>Olimpíadas <i>TEC</i></h2>
+    <ul>
+      <li><b>Desenvolvido por:</b> Alan E vlá</li>
+      <li><b>Fone:</b> (43) 2370-8794</li>
+      <li><b>Email:</b> alan.macena@colégio.pr.gov.br</li>
+    </ul>
+  </footer>
 </body>
 
 </html>
