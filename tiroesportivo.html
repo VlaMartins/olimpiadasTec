@@ -14,7 +14,8 @@
             font-family: 'Roboto', sans-serif;
             background: linear-gradient(135deg, #1c1c1c, #3a3a3a);
             color: #ffffff;
-            overflow: hidden; /* Impede o scroll quando a imagem do mouse é movida */
+            overflow: hidden;
+            /* Impede o scroll quando a imagem do mouse é movida */
         }
 
         .site-header {
@@ -67,13 +68,17 @@
             transform: translateY(0);
         }
 
-        h1, h2, h3 {
+        h1,
+        h2,
+        h3 {
             color: #ffcc00;
             margin-bottom: 1em;
             text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
         }
 
-        p, ul, ol {
+        p,
+        ul,
+        ol {
             line-height: 1.8;
             margin-bottom: 1em;
         }
@@ -130,9 +135,12 @@
         /* Estilo para a imagem do mouse */
         #mouseFollower {
             position: absolute;
-            pointer-events: none; /* Permite que eventos do mouse passem pela imagem */
-            width: 50px; /* Ajuste o tamanho da imagem conforme necessário */
-            transition: transform 0.1s; /* Suaviza o movimento */
+            pointer-events: none;
+            /* Permite que eventos do mouse passem pela imagem */
+            width: 50px;
+            /* Ajuste o tamanho da imagem conforme necessário */
+            transition: transform 0.1s;
+            /* Suaviza o movimento */
         }
 
         .testimonials {
@@ -175,7 +183,8 @@
 
     <section class="cabecalho visible">
         <h1>Tiro Esportivo</h1>
-        <p style="text-align: center;">O tiro esportivo é uma modalidade competitiva que envolve o uso de armas de fogo ou de ar comprimido, onde os atiradores visam acertar alvos específicos com precisão.</p>
+        <p style="text-align: center;">O tiro esportivo é uma modalidade competitiva que envolve o uso de armas de fogo
+            ou de ar comprimido, onde os atiradores visam acertar alvos específicos com precisão.</p>
         <img src="img/tiro1.jpg" alt="Tiro Esportivo 1">
         <img src="img/tiro2.jpg" alt="Tiro Esportivo 2">
         <img src="img/tiro4.webp" alt="Tiro Esportivo 3">
@@ -184,7 +193,8 @@
 
     <section>
         <h2>Modalidades</h2>
-        <p>Existem várias modalidades de tiro esportivo, incluindo pistola, carabina, tiro ao prato (trap, skeet), entre outras.</p>
+        <p>Existem várias modalidades de tiro esportivo, incluindo pistola, carabina, tiro ao prato (trap, skeet), entre
+            outras.</p>
         <ul>
             <li>Armas: Pistolas, rifles e espingardas, dependendo da modalidade.</li>
             <li>Alvos: Variam entre alvos estáticos e móveis.</li>
@@ -208,17 +218,20 @@
     <section class="testimonials">
         <h2>Depoimentos</h2>
         <div class="testimonial-item">
-            <p><i>"O tiro esportivo me trouxe disciplina e foco, além de ser um esporte emocionante!"</i> - Atirador Profissional</p>
+            <p><i>"O tiro esportivo me trouxe disciplina e foco, além de ser um esporte emocionante!"</i> - Atirador
+                Profissional</p>
         </div>
         <div class="testimonial-item">
-            <p><i>"Participar de competições é sempre uma experiência incrível, aprendi muito!"</i> - Atirador Amador</p>
+            <p><i>"Participar de competições é sempre uma experiência incrível, aprendi muito!"</i> - Atirador Amador
+            </p>
         </div>
     </section>
 
     <section class="faq">
         <h2>Perguntas Frequentes</h2>
         <h4>1. É necessário ter licença para praticar tiro esportivo?</h4>
-        <p>Sim, é necessário ter a licença apropriada para manuseio de armas, além de passar por treinamentos específicos.</p>
+        <p>Sim, é necessário ter a licença apropriada para manuseio de armas, além de passar por treinamentos
+            específicos.</p>
         <h4>2. Quais as idades mínimas para praticar tiro?</h4>
         <p>Normalmente, a idade mínima é 14 anos, mas isso pode variar conforme a regulamentação local.</p>
     </section>
@@ -231,26 +244,61 @@
             <li><b>Email:</b> contato
 
 
-    <script>
-        document.addEventListener("DOMContentLoaded", function () {
-            const sections = document.querySelectorAll("section");
-            const options = {
-                root: null,
-                rootMargin: "0px",
-                threshold: 0.1
-            };
+                <script>
+                    document.addEventListener("DOMContentLoaded", function () {
+                        const sections = document.querySelectorAll("section");
+                        const options = {
+                            root: null,
+                            rootMargin: "0px",
+                            threshold: 0.1
+                        };
 
-            const observer = new IntersectionObserver((entries) => {
-                entries.forEach(entry => {
-                    if (entry.isIntersecting) {
-                        entry.target.classList.add("visible");
-                    }
-                });
-            }, options);
+                        const observer = new IntersectionObserver((entries) => {
+                            entries.forEach(entry => {
+                                if (entry.isIntersecting) {
+                                    entry.target.classList.add("visible");
+                                }
+                            });
+                        }, options);
 
-            sections.forEach(section => {
-                observer.observe(section);
-            });
+                        sections.forEach(section => {
+                            observer.observe(section);
+                        });
 
-            const animateButton = document.getElementById("animateButton");
-            animateButton.addEventListener("click", function () {
+                        const animateButton = document.getElementById("animateButton");
+                        animateButton.addEventListener("click", function () {
+
+                            document.addEventListener("DOMContentLoaded", function () {
+                                const sections = document.querySelectorAll("section");
+                                const options = {
+                                    root: null,
+                                    rootMargin: "0px",
+                                    threshold: 0.1
+                                };
+
+                                const observer = new IntersectionObserver((entries) => {
+                                    entries.forEach(entry => {
+                                        if (entry.isIntersecting) {
+                                            entry.target.classList.add("visible");
+                                        }
+                                    });
+                                }, options);
+
+                                sections.forEach(section => {
+                                    observer.observe(section);
+                                });
+
+                                const animateButton = document.getElementById("animateButton");
+                                animateButton.addEventListener("click", function () {
+                                    alert("Botão clicado!");
+                                });
+
+                                // Movendo a imagem com o mouse
+                                const mouseFollower = document.getElementById("mouseFollower");
+
+                                document.addEventListener("mousemove", (event) => {
+                                    const mouseX = event.clientX;
+                                    const mouseY = event.clientY;
+                                    mouseFollower.style.transform = `translate3d(${mouseX}px, ${mouseY}px, 0)`;
+                                });
+                            });
