@@ -125,6 +125,30 @@
             background-color: #e0ba74;
             transform: translateY(-3px);
         }
+
+        .testimonials {
+            background-color: rgba(255, 255, 255, 0.2);
+            border-radius: 10px;
+            padding: 20px;
+            margin-top: 20px;
+        }
+
+        .testimonial-item {
+            margin-bottom: 15px;
+            padding: 10px;
+            border-left: 5px solid #00acfc;
+        }
+
+        .faq {
+            background-color: rgba(255, 255, 255, 0.1);
+            padding: 15px;
+            border-radius: 10px;
+            margin-top: 20px;
+        }
+
+        .faq h4 {
+            margin: 10px 0;
+        }
     </style>
 </head>
 
@@ -143,9 +167,9 @@
     <section class="cabecalho visible">
         <h1>Tiro Esportivo</h1>
         <p style="text-align: center;">O tiro esportivo é uma modalidade competitiva que envolve o uso de armas de fogo ou de ar comprimido, onde os atiradores visam acertar alvos específicos com precisão.</p>
-        <img src="img/tiro1.jpg" alt="">
-        <img src="img/tiro2.jpg" alt="">
-        <img src="img/tiro4.webp" alt="">
+        <img src="img/tiro1.jpg" alt="Tiro Esportivo 1">
+        <img src="img/tiro2.jpg" alt="Tiro Esportivo 2">
+        <img src="img/tiro4.webp" alt="Tiro Esportivo 3">
         <button class="animate-button" id="animateButton">Clique Aqui</button>
     </section>
 
@@ -170,6 +194,24 @@
             <li><b>Espingarda:</b> Usada em modalidades como tiro ao prato.</li>
             <li><b>Armas de Ar Comprimido:</b> Comuns em modalidades de precisão.</li>
         </ol>
+    </section>
+
+    <section class="testimonials">
+        <h2>Depoimentos</h2>
+        <div class="testimonial-item">
+            <p><i>"O tiro esportivo me trouxe disciplina e foco, além de ser um esporte emocionante!"</i> - Atirador Profissional</p>
+        </div>
+        <div class="testimonial-item">
+            <p><i>"Participar de competições é sempre uma experiência incrível, aprendi muito!"</i> - Atirador Amador</p>
+        </div>
+    </section>
+
+    <section class="faq">
+        <h2>Perguntas Frequentes</h2>
+        <h4>1. É necessário ter licença para praticar tiro esportivo?</h4>
+        <p>Sim, é necessário ter a licença apropriada para manuseio de armas, além de passar por treinamentos específicos.</p>
+        <h4>2. Quais as idades mínimas para praticar tiro?</h4>
+        <p>Normalmente, a idade mínima é 14 anos, mas isso pode variar conforme a regulamentação local.</p>
     </section>
 
     <footer>
@@ -202,16 +244,4 @@
                 observer.observe(section);
             });
 
-            const animateButton = document.getElementById("animateButton");
-            animateButton.addEventListener("click", function () {
-                alert("Você clicou no botão!");
-                animateButton.classList.add("animate");
-                setTimeout(() => {
-                    animateButton.classList.remove("animate");
-                }, 500);
-            });
-        });
-    </script>
-</body>
-
-</html>
+            const animateButton =
