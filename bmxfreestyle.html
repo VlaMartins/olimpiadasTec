@@ -1,91 +1,209 @@
-<html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> Handebol </title>
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-        body{
-            width: 100%;
-            font-size: 18px;
-            font-family: "Poppins", sans-serif;
-            line-height: 1.6;
-        }
-
-        section {
-            max-width: 90%;
-            background-color: rgba(21, 103, 196, 0.836);
-            color: rgb(255, 253, 253);
-            margin: auto;
-            padding: 2em;
-            padding-bottom: 2em;
-        }
-
-        section h1{
-            text-align: center;
-        }
-
-        .centro{
-            align-items: center;
-        }
-
-        footer {
-            width: 100%;
-            height: 8em;
-            bottom: 0px;
-            color: white;
-            background-color:#044268;
-            line-height: 1.5; 
-            font-family: "Poppins", sans-serif;
-            line-height: 1.0;
-        }
-
-        footer h2{
-            padding-top: 10px;
-            color:white;
-            text-align: center;
-        }
-
-        footer ul{
-            margin-bottom: 2em ;
-        }
-
-        footer ul li{
-            color: #e0ba74;
-            text-align: center;
-            list-style-type: none;
-        }
-
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ciclismo bmx freestyle</title>
+ 
 </head>
-<body>
-    
-    <section>
-        <h1> Handebol </h1>
-        <p> 
-            O handebol é um esporte bastante popular nas Olimpíadas. Ele foi introduzido como esporte olímpico nos Jogos de Berlim em 1936, mas foi apenas nos Jogos de Munique em 1972 que o handebol de quadra começou a fazer parte do programa olímpico de forma regular. Nos Jogos Olímpicos modernos, tanto o handebol masculino quanto o feminino são disputados. As partidas são realizadas em ginásios específicos para handebol, onde equipes de sete jogadores (seis em campo e um goleiro) competem em partidas emocionantes e intensas. Os países que têm tradição no handebol, como França, Dinamarca, Noruega, Suécia, Rússia e Brasil, frequentemente estão entre os favoritos a medalhas. O handebol nas Olimpíadas atrai muitos espectadores e é conhecido por sua rapidez, habilidade técnica e tática complexa.
-        </p>
 
-        <ol>
-            <li> <b>Origem e Evolução:</b> O handebol moderno teve suas origens na Europa, especialmente na Alemanha e na Suécia, no final do século XIX e início do século XX. Inicialmente, era jogado ao ar livre, mas eventualmente se desenvolveu para a versão de quadra fechada que conhecemos hoje.</li>
-            <li> <b>Regras Básicas:</b> O handebol é jogado por duas equipes de sete jogadores cada (seis jogadores de linha e um goleiro). O objetivo é marcar gols no gol adversário, utilizando passes, dribles e arremessos precisos. Os jogadores podem driblar a bola por até três passos sem driblar novamente ou segurá-la por até três segundos sem se mover.</li>
-            <li> <b>Quadra:</b> A quadra de handebol tem cerca de 40 metros de comprimento por 20 metros de largura, com uma área de gol em cada extremidade.</li>
-            <li> <b>Competições Importantes:</b> O handebol é uma parte importante dos Jogos Olímpicos, sendo disputado tanto no masculino quanto no feminino. Além disso, há competições internacionais como o Campeonato Mundial de Handebol e os campeonatos continentais (Europeu, Asiático, Pan-Americano, entre outros).</li>
-            <li> <b>Popularidade:</b> O handebol é especialmente popular na Europa, onde é um dos esportes mais assistidos e praticados. No entanto, sua popularidade tem crescido em outras regiões do mundo, incluindo América do Sul, Ásia e África.</li>
-            <li> <b>Técnicas e Estratégias:</b> O jogo envolve uma combinação de habilidades físicas (como velocidade, agilidade e força) e técnicas (como passes rápidos e arremessos precisos). As equipes geralmente empregam estratégias táticas para superar seus oponentes, incluindo defesas específicas e jogadas ensaiadas.</li>
-            <li> <b>Equipamentos:</b> Os jogadores usam uniformes específicos e os goleiros têm equipamentos adicionais de proteção. A bola de handebol é feita de couro ou material sintético e é menor e mais leve do que uma bola de futebol.</li>
-        </ol>
-        <img class="centro" src="img/handebolfeminino.jpg" alt="handebol feminino">
-    </section>
+<body> 
+<button class="button" data-text="Awesome">
+ <ul> <span></li> <a href="index.html"></a>pagina<li></span></ul>
+    <span class="actual-text">&nbsp;&nbsp;</span>
+    <span aria-hidden="true" class="hover-text">&nbsp;<span></li><a href="index.html">Pagina inicial</a><li></li>&nbsp;</span>
+</button>
+  <style> 
+/* === removing default button style ===*/
+.button {
+  margin: 0;
+  height: auto;
+  background: transparent;
+  padding: 0;
+  border: none;
+  cursor: pointer;
+}
 
-    <footer>
-        <h2>Olimpiadas <i>TEC</i></h2>
-        <ul>
-            <li> <b> Desenvolvido por: XXXXXXX </b></li>
-            <li><b> Fone:</b> (43) 99908-1213</li>
-            <li> <b>Email: @Colegio Reni</b></li>
-        </ul>
-    </footer>
-    
+/* button styling */
+.button {
+  --border-right: 6px;
+  --text-stroke-color: rgba(255,255,255,0.6);
+  --animation-color: #37FF8B;
+  --fs-size: 2em;
+  letter-spacing: 3px;
+  text-decoration: none;
+  font-size: var(--fs-size);
+  font-family: "Arial";
+  position: relative;
+  text-transform: uppercase;
+  color: transparent;
+  -webkit-text-stroke: 1px var(--text-stroke-color);
+}
+/* this is the text, when you hover on button */
+.hover-text {
+  position: absolute;
+  box-sizing: border-box;
+  content: attr(data-text);
+  color: var(--animation-color);
+  width: 0%;
+  inset: 0;
+  border-right: var(--border-right) solid var(--animation-color);
+  overflow: hidden;
+  transition: 0.5s;
+  -webkit-text-stroke: 1px var(--animation-color);
+}
+/* hover */
+.button:hover .hover-text {
+  width: 100%;
+  filter: drop-shadow(0 0 23px var(--animation-color))
+}
+  </style>
+  <style>
+    h1, h2, h3 {
+  font-family: Montserrat, Arial Black, Bebas Neue, sans-serif;
+  font-weight: bold;
+}
+    body {
+      background-color: #000;
+      color: #fff;
+      footer{
+        width: 100%;
+        bottom: 0px;
+        color: #fff;
+        background-color: blueviolet;
+        }
+        footer ul{
+          margin-bottom: 3em;
+      }
+      footer h2{
+        padding-top: 10px;
+        color: #fff;
+        text-align: center;
+      }
+      footer ul li{
+        color:#e0ba74 ;
+        text-align: center;
+        list-style: none;
+      }
+    }
+  </style>
+  <header>
+    <h1> Sobre o ciclismo bmx freestyle</h1>
+  </header>
+  <img src="img/bmxfreestyle2" alt="capa">
+  <p>O ciclismo BMX freestyle nasce do imaginário de crianças e adolescentes da Califórnia na década de 1970, que se
+    inspiraram nos movimentos dos pilotos de BMX Racing da região. O esporte tornou-se cada vez mais popular nas décadas
+    seguintes e foi integrado aos programas de competições de esportes radicais, incluindo o X-Games nos anos 2000 e o
+    FISE (Festival Internacional de Esportes Radicais). A primeira Copa do Mundo de BMX Freestyle foi organizada pelo
+    órgão regulador do ciclismo, a União Ciclística Internacional (UCI), em 2016, como parte da FISE daquele ano.</p>
+  <h2>BREVE RESUMO DAS REGRAS </h2>
+  <p>competição de BMX freestyle acontecerá em um parque urbano, onde os pilotos realizarão o máximo de manobras
+    possíveis em 60 segundos. Eles serão pontuados com base na dificuldade das manobras, na altura dos saltos e na
+    criatividade e estilo de suas apresentações.</p>
+  <img src="img/bmxfreestyle" alt="ciclismo bmx freestyle paris 2024">
+  <h3>HISTÓRIA OLÍMPICA</h3>
+  <p>O BMX freestyle surgiu no palco Olímpico pela primeira vez nos Jogos Olímpicos da Juventude de 2018, em Buenos
+    Aires. Ele ofereceu um espetáculo emocionante diante de uma multidão, convencendo o COI do potencial definitivo
+    deste esporte urbano.
+    O Brasil tem um rep(43) 9-9116-1635resentante na modalidade, Gustavo "Bala Loka" Oliveira, que já fez história ao chegar nos Jogos
+    Olímpicos Paris 2024 e sai da competição entre os melhores do mundo em sua modalidade.
+
+    O ciclismo BMX freestyle é uma modalidade que exige habilidade, força e resistência. Os atletas precisam ter uma boa
+    técnica e equilíbrio para realizar as manobras com segurança e eficiência.
+
+    O BMX freestyle retorna à segunda edição dos Jogos Olímpicos em Paris 2024 após fazer sua estreia competitiva em
+    Tóquio 2020.</p>
+
+  <p>O ciclismo BMX freestyle é uma modalidade de ciclismo que envolve acrobacias e manobras em bicicletas BMX. É uma
+    modalidade que requer habilidade, equilíbrio e coragem.
+  </p>
+  <h3>O BMX freestyle é dividido em 7 modalidades, cada uma com suas próprias características e desafios. As modalidades
+    incluem</h3>
+  <ul>
+    <li><i>Street: envolve manobras em ruas e calçadas</i></li>
+    <li><i>Park: envolve manobras em parques e áreas fechadas</i></li>
+    <li><i>Vert: envolve manobras em rampas verticais</i></li>
+    <li><i>Dirt: envolve manobras em trilhas de terra</i></li>
+    <li><i>Flatland: envolve manobras em superfícies planas</i></li>
+    <li><i>Cruising: envolve passeios em bicicleta em áreas urbanas</i></li> position: absolute;
+    bottom: 0;
+    width: 100%;
+    <li><i>Racing: envolve corridas em pistas fechadas</i></li>
+  </ul>
+  <p>
+    <b> visão geral de como funciona a competição BMX Freestyle nas Olimpíadas:</b>
+
+  <p> <b>Formato da competição:</b></p>
+
+  <li> Fase de qualificação: todos os pilotos</li>
+  <li>Rodada Final:O topo</li>
+  <li>Runs: Cada piloto tem um número determinado de “runs” ou passagens, onde ele executa suas manobras. A pontuação é
+    dada com base na qualidade e dificuldade das manobras realizadas. </li>
+  <li> Jams: Em competições de jam, os pilotos se revezam em um período de tempo fixo e podem competir ao mesmo tempo,
+    com o objetivo de mostrar suas habilidades.</li>
+  <p><b>Pontuação:</b> </p>
+
+  <li> Dificuldade do truque: Riders</li>
+  <li> Execução: Cavaleiros</li>
+  <li>Variedade: Cavaleiros</li>
+  <li>Fluxo: Os pilotos são</li>
+  <p><b>Critérios de julgamento:</b></p>
+
+  <li>Dificuldade: A complexidade dos truques realizados é fundamental. Truques mais desafiadores e avançados geralmente
+    recebem uma pontuação mais alta. Isso inclui a combinação de vários truques, a  position: absolute;
+    bottom: 0;
+    width: 100%;execução de manobras raras e a
+    realização de variações criativas.</li>
+  <li> Execução: A maneira como o truque é executado é crucial. Isso inclui a fluidez do movimento, a precisão no
+    momento do salto e a aterrissagem. Truques executados de forma limpa, com controle e sem erros tendem a ser mais bem
+    avaliados. </li>
+  <li> Originalidade e Criatividade: A inovação e a criatividade desempenham um papel importante. Juízes valorizam os
+    ciclistas que introduzem novas manobras, combinações e estilos únicos, contribuindo para o avanço do esporte.</li>
+  <li>Estilo: O estilo pessoal e a apresentação são aspectos importantes. Isso abrange a forma como o ciclista se
+    movimenta, sua atitude durante a performance e a forma geral como ele faz os truques parecerem naturais e fluidos.
+  </li>
+  <li>Compensação de Risco: Realizar truques arriscados com sucesso é altamente valorizado. A habilidade de executar
+    manobras de alto risco de forma segura e consistente pode impactar positivamente a pontuação.</li>
+  <li>Duração e Complexidade da Rotina: Em competições onde uma rotina completa é realizada, a duração e a complexidade
+    da rotina são avaliadas. Uma rotina bem planejada e com uma boa variedade de truques pode melhorar a pontuação.</li>
+  <li>Aterrissagem: A forma como o ciclista aterrissa é um aspecto importante. Aterrissagens suaves e controladas são
+    preferíveis, e quedas ou aterrissagens desajeitadas podem reduzir a pontuação.</li>
+  <li>Amplitude e Altura: A amplitude e a altura dos saltos são considerados. Truques realizados em maiores alturas e
+    com maior amplitude geralmente são mais impressionantes.</li>
+  <li>Transições e Conexões: A forma como os truques são conectados e as transições entre eles são avaliadas. Uma rotina
+    que flui bem, com transições suaves entre diferentes manobras, é mais bem pontuada. </li>
+
+  <p><b>Características do parque:</b></p>
+
+  <p> <b>O parque Olímpico BMX Freestyle apresenta uma variedade de obstáculos, incluindo:</b></p>
+
+  <li>Saltos : Rampas que permitem aos pilotos realizar acrobacias e truques aéreos </li>
+  <li>Quarter Pipes : Rampas curvas que os pilotos podem usar para executar manobras e combinações </li>
+  <li>Bowls : Depressões no solo por onde os cavaleiros podem entrar e sair, realizando manobras e acrobacias. </li>
+  <li>Rampas : Planos inclinados que os pilotos podem usar para ganhar velocidade e executar saltos e manobras</li>
+  <li>Características da rua : obstáculos que imitam ambientes urbanos, como escadas, corrimãos e saliências</li>
+  <li>Vulcão : Uma grande plataforma elevada com uma borda curva da qual os passageiros podem pular</li>
+  <li>Espinhos : plataformas estreitas e elevadas nas quais os cavaleiros podem andar e realizar manobras</li>
+  <li>allrides : Paredes verticais nas quais os pilotos podem andar e fazer manobras</li>
+  <p><b>Regras:</b></p>
+
+  <li> Park: Competição em pistas com rampas, bowls e obstáculos. </li>
+  <li> Street: Manobras realizadas em ambientes urbanos, como corrimãos, bancos e escadas.</li>
+  <li> Dirt: Saltos em rampas de terra, com foco em manobras aéreas e acrobacias. </li>
+  <li> Flatland: Manobras técnicas e complexas realizadas em superfícies planas.</li>
+  <li>Os ciclistas devem usar equipamentos de segurança aprovados, incluindo capacete, joelheiras e cotoveleiras.</li>
+  <li>Os ciclistas devem começar e terminar cada corrida dentro da área de competição designada.</li>
+  <li>Os pilotos não estão autorizados a tocar ou interferir com outros pilotos durante a competição</li>
+  <li>Os competidores não estão autorizados a realizar manobras que danifiquem intencionalmente a área de competição ou o equipamento.</li>
+  <p> Ao combinar esses elementos, a competição BMX Freestyle nas Olimpíadas mostra as habilidades, a criatividade e o estilo dos ciclistas em um formato emocionante e de alta energia.</p>
+
+<footer>
+  <h2>Olimpíadas <i>TEC</i></h2>
+  <ul>
+    <li><b>Desenvolvido por:</b>Alan E vlá</li>
+    <li><b>fone:</b> (43) 2370-8794 </li>
+    <li><b>Email:</b>Alan.macena@colégio.pr.gov.br</li>
+  </ul>
+</footer>
+
 </body>
+
 </html>
