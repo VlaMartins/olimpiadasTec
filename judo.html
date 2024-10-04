@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 
 <head>
     <meta charset="UTF-8">
@@ -9,8 +9,8 @@
         body {
             font-family: Arial, sans-serif;
             background-color: #b9b9b9;
-            padding: 20px;
-            margin: 0;
+            padding: 0; /* Remover padding do body */
+            margin: 0; /* Remover margin do body */
             color: #333;
         }
 
@@ -25,6 +25,8 @@
             position: sticky;
             top: 0;
             z-index: 1000;
+            width: 100%; /* Cobrir toda a largura da tela */
+            margin: 0; /* Sem margens */
         }
 
         .logo img {
@@ -52,12 +54,10 @@
             color: #ffcc00;
         }
 
-
         .container {
             display: flex;
             flex-wrap: wrap;
             margin-bottom: 20px;
-
         }
 
         .container-item {
@@ -76,8 +76,7 @@
         }
 
         img {
-            width: 40%;
-            /* Adjusts width of the image */
+            width: 40%; /* Ajusta a largura da imagem */
             border-radius: 15px;
             margin-left: 20px;
         }
@@ -96,13 +95,12 @@
         }
 
         footer {
-            position: relative;
-            width: 100%;
+            width: 100%; /* Cobrir toda a largura da tela */
             padding: 20px;
-            margin-top: 20px;
             color: #fff;
-            background-color: #333;/*  */
+            background-color: #333;
             text-align: center;
+            margin: 0; /* Sem margens */
         }
 
         footer h2 {
@@ -136,39 +134,17 @@
             <div class="container-item">
                 <h2>Um pouco sobre:</h2>
                 <div class="image-text">
-                    <p>O judô é uma tradicional arte marcial japonesa derivada do jiu-jitsu, a técnica de combate corpo
-                        a
-                        corpo dos antigos guerreiros samurais. O Dr. Jigoro Kano é creditado como fundador da disciplina
-                        em Tóquio
-                        depois de abrir seu primeiro dojo (escola), o kōdōkan, em 1882. Em japonês, a palavra “judô”
-                        significa
-                        “o caminho suave”, mas o tradicional esporte de luta dificilmente pode ser descrito como tal,
-                        pois
-                        requer um esforço físico considerável. Dr. Kano combinou os princípios filosóficos do judô com
-                        métodos de
-                        educação física, intelectual e moral, ao mesmo tempo em que eliminou muitos dos aspectos mais
-                        perigosos do jiu-jitsu. O judô tornou-se popular na Europa e, particularmente na França, no fim
-                        do século 20,
-                        tornando-se a primeira arte marcial amplamente praticada fora do Japão.</p>
+                    <p>O judô é uma tradicional arte marcial japonesa derivada do jiu-jitsu, a técnica de combate corpo a corpo dos antigos guerreiros samurais. O Dr. Jigoro Kano é creditado como fundador da disciplina em Tóquio depois de abrir seu primeiro dojo (escola), o kōdōkan, em 1882. Em japonês, a palavra “judô” significa “o caminho suave”, mas o tradicional esporte de luta dificilmente pode ser descrito como tal, pois requer um esforço físico considerável. Dr. Kano combinou os princípios filosóficos do judô com métodos de educação física, intelectual e moral, ao mesmo tempo em que eliminou muitos dos aspectos mais perigosos do jiu-jitsu. O judô tornou-se popular na Europa e, particularmente na França, no fim do século 20, tornando-se a primeira arte marcial amplamente praticada fora do Japão.</p>
                     <img src="judo.webp" alt="Judô">
                     <h2>os medalhistas brasileiros</h2>
                 </div>
             </div>
         </section>
 
-        <section class="container ">
+        <section class="container">
             <div class="container-item">
                 <h2>Breve resumo das regras</h2>
-                <p>O judô tem como objetivo derrubar o oponente, imobilizá-lo ou forçar uma finalização. A pontuação
-                    principal
-                    é o ippon, concedido por um golpe decisivo ou imobilização por 20 segundos, resultando na vitória
-                    imediata.
-                    O waza-ari é um ponto parcial, dado por um golpe menos eficaz ou imobilização entre 10 e 20
-                    segundos; dois
-                    waza-aris equivalem a um ippon. As competições são divididas por categorias de peso e duram quatro
-                    minutos,
-                    com prorrogação em caso de empate, além de penalidades por falta de combate ou comportamento
-                    inadequado.</p>
+                <p>O judô tem como objetivo derrubar o oponente, imobilizá-lo ou forçar uma finalização. A pontuação principal é o ippon, concedido por um golpe decisivo ou imobilização por 20 segundos, resultando na vitória imediata. O waza-ari é um ponto parcial, dado por um golpe menos eficaz ou imobilização entre 10 e 20 segundos; dois waza-aris equivalem a um ippon. As competições são divididas por categorias de peso e duram quatro minutos, com prorrogação em caso de empate, além de penalidades por falta de combate ou comportamento inadequado.</p>
             </div>
         </section>
     </main>
