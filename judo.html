@@ -6,6 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>JUDÔ</title>
     <style>
+        /* Para garantir que o padding e a borda sejam incluídos na largura total */
+        *, *::before, *::after {
+            box-sizing: border-box;
+        }
+
         body {
             font-family: Arial, sans-serif;
             background-color: #b9b9b9;
@@ -14,7 +19,7 @@
             color: #333;
         }
 
-        /*cabeçalho*/
+        /* Cabeçalho */
         .site-header {
             background-color: rgba(0, 0, 0, 0.8);
             padding: 15px 30px;
@@ -58,6 +63,7 @@
             display: flex;
             flex-wrap: wrap;
             margin-bottom: 20px;
+            width: 100%; /* Garantir que a largura é 100% */
         }
 
         .container-item {
@@ -68,6 +74,7 @@
             padding: 20px;
             box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
             margin: 0 10px;
+            width: calc(100% - 20px); /* Ajustar largura do container */
         }
 
         .image-text {
