@@ -5,34 +5,34 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>JUDÔ</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <style>
-        /* Para garantir que o padding e a borda sejam incluídos na largura total */
+        /* Resetando estilos padrão */
         *, *::before, *::after {
             box-sizing: border-box;
         }
 
         body {
-            font-family: Arial, sans-serif;
-            background-color: #b9b9b9;
-            padding: 0; /* Remover padding do body */
-            margin: 0; /* Remover margin do body */
+            font-family: 'Roboto', sans-serif;
+            background-color: #f0f0f0; /* Cor de fundo mais clara */
+            margin: 0;
+            padding: 0;
             color: #333;
             display: flex;
             flex-direction: column;
-            height: auto; /* Altura automática para permitir rolagem */
+            min-height: 100vh; /* Altura mínima para ocupar toda a tela */
         }
 
         /* Cabeçalho */
         .site-header {
-            background-color: rgba(0, 0, 0, 0.8);
+            background-color: #333; /* Cor sólida */
             padding: 15px 30px;
             display: flex;
             justify-content: space-between;
             align-items: center;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
-            width: 100%; /* Cobrir toda a largura da tela */
-            z-index: 1000; /* Manter acima do conteúdo */
-            height: 70px; /* Definindo a altura do header */
+            width: 100%;
+            height: 70px;
         }
 
         .logo img {
@@ -42,6 +42,8 @@
         .main-nav ul {
             list-style: none;
             display: flex;
+            margin: 0; /* Remover margin */
+            padding: 0; /* Remover padding */
         }
 
         .main-nav ul li {
@@ -57,32 +59,31 @@
         }
 
         .main-nav ul li a:hover {
-            color: #ffcc00;
+            color: #ffcc00; /* Destacar ao passar o mouse */
         }
 
         main {
-            flex: 1; /* Para ocupar o espaço restante */
+            flex: 1; /* Ocupa o espaço restante */
             margin-top: 0; /* Sem espaço abaixo do header */
-            padding: 20px; /* Espaçamento interno */
+            padding: 20px;
             width: 100%; /* Garantir largura total */
+            display: flex;
+            flex-direction: column; /* Organizar as seções em coluna */
+            align-items: center; /* Centralizar conteúdo */
         }
 
         .container {
-            display: flex;
-            flex-wrap: wrap;
+            background: linear-gradient(135deg, #fff, #eaeaea);
+            border-radius: 15px;
+            padding: 20px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
             margin-bottom: 20px;
-            width: 100%; /* Garantir que a largura é 100% */
+            width: 100%; /* Garantir largura total */
+            max-width: 800px; /* Limitar a largura máxima */
         }
 
         .container-item {
-            max-width: 1400px;
-            background-color: #fff;
-            border-radius: 25px;
-            line-height: 1.6;
-            padding: 20px;
-            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-            margin: 0 10px;
-            width: calc(100% - 20px); /* Ajustar largura do container */
+            margin: 20px 0; /* Espaço entre os itens */
         }
 
         .image-text {
@@ -91,26 +92,30 @@
         }
 
         img {
-            width: 40%; /* Ajusta a largura da imagem */
+            width: 40%;
             border-radius: 15px;
             margin-left: 20px;
+            max-width: 100%; /* Responsivo */
         }
 
         h1 {
-            color: #fffdfd;
+            color: #333;
+            text-align: center; /* Centralizar título */
+            margin-bottom: 20px; /* Espaço abaixo do título */
         }
 
         h2 {
-            color: #000000;
+            color: #000;
             margin: 10px 0;
         }
 
         p {
             margin: 10px 0;
+            line-height: 1.6; /* Melhorar legibilidade */
         }
 
         footer {
-            width: 100%; /* Cobrir toda a largura da tela */
+            width: 100%;
             padding: 20px;
             color: #fff;
             background-color: #333;
@@ -126,6 +131,22 @@
         footer ul {
             padding: 0;
             list-style: none;
+        }
+
+        /* Responsividade */
+        @media (max-width: 600px) {
+            .main-nav ul {
+                flex-direction: column; /* Colocar os links em coluna em telas pequenas */
+                align-items: center; /* Centralizar os links */
+            }
+
+            .main-nav ul li {
+                margin: 10px 0; /* Espaço vertical entre os links */
+            }
+
+            img {
+                width: 70%; /* Ajustar a largura da imagem em telas menores */
+            }
         }
     </style>
 </head>
@@ -145,13 +166,13 @@
     </header>
 
     <main>
+        <h1>Judô</h1>
         <section class="container">
             <div class="container-item">
                 <h2>Um pouco sobre:</h2>
                 <div class="image-text">
                     <p>O judô é uma tradicional arte marcial japonesa derivada do jiu-jitsu, a técnica de combate corpo a corpo dos antigos guerreiros samurais. O Dr. Jigoro Kano é creditado como fundador da disciplina em Tóquio depois de abrir seu primeiro dojo (escola), o kōdōkan, em 1882. Em japonês, a palavra “judô” significa “o caminho suave”, mas o tradicional esporte de luta dificilmente pode ser descrito como tal, pois requer um esforço físico considerável. Dr. Kano combinou os princípios filosóficos do judô com métodos de educação física, intelectual e moral, ao mesmo tempo em que eliminou muitos dos aspectos mais perigosos do jiu-jitsu. O judô tornou-se popular na Europa e, particularmente na França, no fim do século 20, tornando-se a primeira arte marcial amplamente praticada fora do Japão.</p>
                     <img src="judo.webp" alt="Judô">
-                    <h2>os medalhistas brasileiros</h2>
                 </div>
             </div>
         </section>
