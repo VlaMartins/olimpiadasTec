@@ -1,164 +1,36 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-
 *{
     padding: 0;
     margin: 0;
 }
-
-body{
-    color: white;
-    font-family: "Poppins", sans-serif;
-}
-
 .flex {
-    background-color:black; 
+    background-color: blueviolet;
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
-    padding: 5px;
+    padding: 10px;
 }
 
-.imgcentro{
-    width: 10%;
-}
-
-/*imagens quadradas */
 .quadrado {
-    background-color:#113c61;
+    border: solid red;
+    background-color: rgb(124, 124, 124);
+    width: 300px;
+    height: 600px;
     flex-wrap: wrap;
-    text-align: center;
+}
+.quadradoF{
+background-color: black;
 }
 
 .quadrado:hover{
-    color: rgb(238, 238, 238);
-    transition: 400ms;
-    opacity: 0.55;
+color: rgb(238, 238, 238);
+transition: 400ms;
+opacity: 0.55;
 }
 
 .imagem{
-    width: 280px; 
-    padding: 1px;
+width: 100%;
+height: 500px;
 }
-
 .texto{
     font-size: 20px;
-    text-align: center;
-    font-weight: 400;
-}
-
-
-/*HAMBURGUER*/
-
-.cabecalho{
-    background-color: #083359;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    position: relative;
-}
-
-.container{ /*sobe o menu dentro do header e alinha verticalmente*/
-    display: flex;
-    align-items: center;
-}
-
-.container__botao { /*esconde o botãozinho do check*/
-    display: none;
-}
-
-/*cria o icone do menu hamburguer e coloca dentro do header*/
-.cabecalho__menu-hamburguer{     
-     width: 24px;
-     height: 24px;
-     background-image: url(img/Menu.svg);
-     background-repeat: no-repeat;
-     background-position: center;
-     display: inline-block;
- }
- 
- /* ajeita o icone do menu*/
-.container__imagem{
-    padding: 2em;
-}
-
-/* .container__titulo {
-    display: flex;/*REVER POR QUE FUI EU QUEM PUS*/
-    color: greenyellow;
-    /* padding-left: 1em;
-} */ */
-
-.container__botao:checked~.container__rotulo>.cabecalho__menu-hamburguer {  
-    /*esconde e mostra o menu*/
-      background-image: url("img/menuAberto.png");
-  }
-  
-  .container__botao:checked~.container__rotulo { 
-    /*o fundo do botao fica na cor escolhida*/
-      background: red;
-  }
-
-/*OS ITENS DA LISTA / MODALIDADES */
-.container__botao:checked~.lista-menu {
-    display: block; /* mostra a lista bloqueada pq se nao por isso ela some */
-}
-
-.lista-menu {
-    display: none;
-    left: 25px;
-    position: absolute;
-    top: 100%;
-    width: 25vw; /*largura do menu */
-    background-color: #083359;
-    list-style-type: none;
-}
-
-.lista-menu__link { /*tam e cor da fonte dos itens de modo geral*/
-    font-size: 22px;
-    color: whitesmoke;
-}
-
-.lista-menu__link:hover { /*tam e cor da fonte altera ao passar o mouse*/
-    font-size: 100px;
-    color: purple;
-}
-
-.lista-menu__item:hover { /*muda cor de fundo ao passar o mouse*/
-    background-color: rgb(185, 177, 225);
-}
-
-.lista-menu__titulo { /* acima onde esta escrito MODALIDADE*/
-    color: greenyellow;
-    font-size: 24px;
-    text-transform: uppercase;
-}
-
-.lista-menu__titulo, .lista-menu__item { /*o titulo MODALIDADE e todos os itens (MODALIDADES) irao ter recuo*/
-    padding: 1em;
-    background-color:black;
-    color: pink;
-}
-
-  
-/*RODAPE */
-footer{
-    width: 100%;
-    height: 6em;
-    bottom: 0px;
-    color: white;
-    background-color:#083359;
-}
-
-footer ul{
-    margin-bottom: 1em;
-}
-
-footer h2{
-    padding-top: 10px;
-    color:white;
-    text-align: center;
-}
-
-footer ul li{
-    color: #e0ba74;
-    text-align: center;
 }

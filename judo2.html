@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Judô</title>
+    <link rel="stylesheet" href="judo.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Josefin Sans', sans-serif;
+            font-size: 18px;
+            line-height: 1.6;
+            background-color: #f0f0f0;
+        }
+
+        header {
+            background-image: url(background.png);
+            background-repeat: no-repeat;
+            background-size: cover;
+            height: 300px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            color: white;
+            position: relative;
+        }
+
+        header::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color: rgba(0, 0, 0, 0.5); /* Cor do fundo com transparência */
+            z-index: 1; /* Fica atrás do texto */
+        }
+
+        .header-content {
+            position: relative; /* Para ficar acima do fundo */
+            z-index: 2; /* Para ficar acima do pseudo-elemento */
+        }
+
+        h1 {
+            font-size: 4rem;
+            margin: 0;
+            font-weight: 300;
+        }
+
+        nav {
+            margin-top: 20px;
+        }
+
+        nav ul {
+            display: flex;
+            list-style: none;
+        }
+
+        nav ul li {
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+
+        nav ul li a:hover {
+            color: #ffcc00;
+        }
+
+        main {
+            padding: 20px;
+        }
+
+        .info-section {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            margin-top: 20px;
+        }
+
+        .info-box {
+            flex: 1;
+            min-width: 300px;
+            padding: 20px;
+            background-color: #ffffff;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s;
+        }
+
+        .info-box:hover {
+            transform: translateY(-5px);
+        }
+
+        .pictogram {
+            width: 100%;
+            max-width: 400px;
+            height: auto;
+            border-radius: 30px;
+        }
+
+        footer {
+            background-color: #000;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        footer h2 {
+            font-size: 2rem;
+            margin-bottom: 10px;
+        }
+
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        li {
+            margin-bottom: 10px;
+        }
+
+        b {
+            font-weight: bold;
+        }
+
+        @media (max-width: 768px) {
+            header {
+                height: 200px;
+            }
+
+            h1 {
+                font-size: 3rem;
+            }
+
+            nav ul {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            nav ul li {
+                margin: 10px 0;
+            }
+
+            .info-section {
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header class="site-header">
+        <div class="header-content">
+            <h1>Judô</h1>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="index.html" class="active">Página Inicial</a></li>
+                    <li><a href="https://olympics.com/pt/paris-2024/esportes/judo">Saiba Mais</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="info-section">
+            <div class="info-box">
+                <h2>Um pouco sobre:</h2>
+                <p>O judô é uma tradicional arte marcial japonesa derivada do jiu-jitsu, a técnica de combate corpo a corpo dos antigos guerreiros samurais. O Dr. Jigoro Kano é creditado como fundador da disciplina em Tóquio depois de abrir seu primeiro dojo (escola), o kōdōkan, em 1882. Em japonês, a palavra “judô” significa “o caminho suave”, mas o tradicional esporte de luta dificilmente pode ser descrito como tal, pois requer um esforço físico considerável.</p>
+            </div>
+            <div class="info-box">
+                <h2>Os Medalhistas Brasileiros</h2>
+                <img src="judo.webp" alt="Judô" class="pictogram">
+                <p>O Brasil tem uma rica história no judô, com vários medalhistas em competições internacionais, incluindo Jogos Olímpicos e Mundiais.</p>
+            </div>
+            <div class="info-box">
+                <h2>Breve Resumo das Regras</h2>
+                <p>O judô tem como objetivo derrubar o oponente, imobilizá-lo ou forçar uma finalização. A pontuação principal é o ippon, concedido por um golpe decisivo ou imobilização por 20 segundos, resultando na vitória imediata.</p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <h2>Olimpíadas <i>Tec</i></h2>
+        <ul>
+            <li><b>Desenvolvido por:</b> Kauany Medardo</li>
+            <li><b>Fone:</b> (43) 9 9876-4511</li>
+            <li><b>Email:</b> Kauany.lmedardo@colegio.pr.gov.br</li>
+        </ul>
+    </footer>
+</body>
+
+</html>
