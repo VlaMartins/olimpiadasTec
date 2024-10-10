@@ -1,9 +1,14 @@
+<!DOCTYPE html>
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Futebol Olímpico</title>
-    <style>
+
+
+
+<style>
+/* Global styles */
 * {
     margin: 0;
     padding: 0;
@@ -13,6 +18,7 @@
 body {
     font-family: 'Arial', sans-serif;
     color: #fff;
+    background-image: url('Img-fut1.jpg');
     background-size: cover;
     background-position: center;
     display: flex;
@@ -20,8 +26,9 @@ body {
     min-height: 100vh;
 }
 
+/* Header */
 .site-header {
-    background-color: rgba(0, 0, 0, 0.8);
+    background-color: #000;
     padding: 15px 30px;
     display: flex;
     justify-content: space-between;
@@ -45,10 +52,6 @@ body {
     margin-right: 30px;
 }
 
-.main-nav ul li:last-child {
-    margin-right: 0; /* Remove margem do último item */
-}
-
 .main-nav ul li a {
     text-decoration: none;
     color: #fff;
@@ -61,28 +64,31 @@ body {
     color: #ffcc00;
 }
 
+/* Container for main image */
 .container {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 20px 0;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.5); /* Slightly dark background for better contrast */
+    border-radius: 10px;
+    margin: 20px;
 }
 
 .imgicone {
-    max-width: 50%;
+    max-width: 50%; /* Ajuste o tamanho máximo da largura */
     height: auto;
     border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
 }
 
+/* Main content */
 main {
     flex: 1;
     padding: 20px;
-    background: rgba(0, 0, 0, 0.7);
+    background: rgba(0, 0, 0, 0.7); /* Darker background for readability */
     border-radius: 10px;
     margin: 20px auto;
     max-width: 1200px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); /* Adicione sombra para profundidade */
 }
 
 .info h1 {
@@ -100,12 +106,14 @@ main {
     margin-bottom: 20px;
 }
 
+/* Footer */
 footer {
-    background-color: rgba(0, 0, 0, 0.8);
+    background-color: #000;
     padding: 20px;
     text-align: center;
     box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.5);
     color: #fff;
+    position: relative;
 }
 
 footer h1 {
@@ -130,36 +138,15 @@ footer ul li b {
     color: #ffcc00;
 }
 
-@media (max-width: 768px) {
-    .main-nav ul {
-        flex-direction: column;
-        align-items: center;
-    }
+</style>
 
-    .main-nav ul li {
-        margin-bottom: 10px;
-    }
 
-    .imgicone {
-        max-width: 80%;
-    }
 
-    main {
-        margin: 10px;
-        padding: 10px;
-    }
-}
-
-        }
-    </style>
 </head>
-
 <body>
     <header class="site-header">
         <div class="logo">
-            <img src="/img/Fut-icon.png" alt="Logo Olímpico"> 
-            <img src="/img/Img-fut1.jpg" alt="">
-            <img class="imgfundo" src="/img/Img-fut1.jpg" alt="Imagem Do Fundo">
+            <img src="Fut-icon.png" alt="Logo Olímpico"> 
         </div>
         <nav class="main-nav">
             <ul>
@@ -170,7 +157,7 @@ footer ul li b {
     </header>
 
     <div class="container">
-        <img src="/img/Fut-icon.png" alt="Ícone das Olimpíadas" class="imgicone">
+        <img src="Fut-icon.png" alt="Ícone das Olimpíadas" class="imgicone">
     </div>
 
     <main>
@@ -202,121 +189,3 @@ footer ul li b {
     </footer>
 </body>
 </html>
-
-.logo img {
-    height: 60px;
-}
-
-.main-nav ul {
-    list-style: none;
-    display: flex;
-}
-
-.main-nav ul li {
-    margin-right: 30px;
-}
-
-.main-nav ul li:last-child {
-    margin-right: 0; /* Remove margem do último item */
-}
-
-.main-nav ul li a {
-    text-decoration: none;
-    color: #fff;
-    font-weight: bold;
-    font-size: 18px;
-    transition: color 0.3s ease;
-}
-
-.main-nav ul li a:hover {
-    color: #ffcc00;
-}
-
-.container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 20px 0;
-}
-
-.imgicone {
-    max-width: 50%;
-    height: auto;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
-}
-
-main {
-    flex: 1;
-    padding: 20px;
-    background: rgba(0, 0, 0, 0.7);
-    border-radius: 10px;
-    margin: 20px auto;
-    max-width: 1200px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); /* Adicione sombra para profundidade */
-}
-
-.info h1 {
-    font-size: 2.5em;
-    margin-bottom: 20px;
-    font-family: 'Arial Black', sans-serif;
-    color: #ffcc00;
-    text-align: center;
-}
-
-.info p {
-    line-height: 1.6;
-    font-size: 1.1em;
-    text-align: justify;
-    margin-bottom: 20px;
-}
-
-footer {
-    background-color: rgba(0, 0, 0, 0.8);
-    padding: 20px;
-    text-align: center;
-    box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.5);
-    color: #fff;
-}
-
-footer h1 {
-    margin-bottom: 15px;
-    font-size: 2em;
-    font-family: 'Arial Black', sans-serif;
-    color: #ffcc00;
-}
-
-footer ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-}
-
-footer ul li {
-    margin-bottom: 10px;
-    font-size: 1.1em;
-}
-
-footer ul li b {
-    color: #ffcc00;
-}
-
-@media (max-width: 768px) {
-    .main-nav ul {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .main-nav ul li {
-        margin-bottom: 10px;
-    }
-
-    .imgicone {
-        max-width: 80%;
-    }
-
-    main {
-        margin: 10px;
-        padding: 10px;
-    }
-}
