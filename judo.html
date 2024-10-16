@@ -1,31 +1,41 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-br">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Judô</title>
-    <link rel="stylesheet" href="judo.css">
+    <title>JUDÔ</title>
     <style>
+        /* Para garantir que o padding e a borda sejam incluídos na largura total */
+        *, *::before, *::after {
+            box-sizing: border-box;
+        }
+
         body {
             font-family: Arial, sans-serif;
             background-color: #b9b9b9;
-            padding: 0;
-            margin: 0;
+            padding: 0; /* Remover padding do body */
+            margin: 0; /* Remover margin do body */
             color: #333;
-        }
-        header{
-            background-image: url(background2.png);
-            background-repeat: no-repeat;
-            background-size: cover;
-            height:600px;
             display: flex;
-            align-items: center;
-            justify-content: center;
+            flex-direction: column;
+            height: 100vh; /* Altura total da tela */
         }
+
         /* Cabeçalho */
-       
-        
+        .site-header {
+            background-color: rgba(0, 0, 0, 0.8);
+            padding: 15px 30px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+            position: fixed; /* Fixo na parte superior */
+            top: 0;
+            left: 0; /* Garantir que fique na esquerda */
+            width: 100%; /* Cobrir toda a largura da tela */
+            z-index: 1000; /* Manter acima do conteúdo */
+        }
 
         .logo img {
             height: 60px;
@@ -34,8 +44,6 @@
         .main-nav ul {
             list-style: none;
             display: flex;
-            margin: 0;
-            padding: 0;
         }
 
         .main-nav ul li {
@@ -50,25 +58,35 @@
             transition: color 0.3s ease;
         }
 
-        .main-nav ul li a:hover,
-        .main-nav ul li a.active {
+        .main-nav ul li a:hover {
             color: #ffcc00;
+        }
+
+        main {
+            flex: 1; /* Para ocupar o espaço restante */
+            margin-top: 80px; /* Espaço abaixo do header */
+            padding: 20px; /* Espaçamento interno */
+            display: flex;
+            flex-direction: column;
+            width: 100%; /* Garantir largura total */
         }
 
         .container {
             display: flex;
             flex-wrap: wrap;
-            margin: 20px;
+            margin-bottom: 20px;
+            width: 100%; /* Garantir que a largura é 100% */
         }
 
         .container-item {
-            flex: 1 1 300px; /* Flexbox para responsividade */
+            max-width: 1400px;
             background-color: #fff;
             border-radius: 25px;
             line-height: 1.6;
             padding: 20px;
             box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-            margin: 10px;
+            margin: 0 10px;
+            width: calc(100% - 20px); /* Ajustar largura do container */
         }
 
         .image-text {
@@ -77,18 +95,17 @@
         }
 
         img {
-            width: 40%;
+            width: 40%; /* Ajusta a largura da imagem */
             border-radius: 15px;
             margin-left: 20px;
         }
 
         h1 {
             color: #fffdfd;
-            text-align: center;
         }
 
         h2 {
-            color: #000;
+            color: #000000;
             margin: 10px 0;
         }
 
@@ -97,11 +114,12 @@
         }
 
         footer {
-            width: 100%;
+            width: 100%; /* Cobrir toda a largura da tela */
             padding: 20px;
             color: #fff;
             background-color: #333;
             text-align: center;
+            margin: 0; /* Sem margens */
         }
 
         footer h2 {
@@ -113,22 +131,6 @@
             padding: 0;
             list-style: none;
         }
-
-        /* Estilos adicionais para melhor apresentação */
-        @media (max-width: 600px) {
-            .main-nav ul {
-                flex-direction: column;
-                align-items: center;
-            }
-
-            .main-nav ul li {
-                margin: 10px 0;
-            }
-
-            img {
-                width: 60%;
-            }
-        }
     </style>
 </head>
 
@@ -136,11 +138,12 @@
     <header class="site-header">
         <div class="logo">
             <img src="/img/Fut-icon.png" alt="Logo Olímpico">
+            <img class="imgfundo" src="/img/Img-fut1.jpg" alt="Imagem Do Fundo">
         </div>
         <nav class="main-nav">
             <ul>
-                <li><a href="index.html" class="active">Página Inicial</a></li>
-                <li><a href="https://olympics.com/pt/paris-2024/esportes/judo">Saiba Mais</a></li>
+                <li><a href="index.html">Página Inicial</a></li>
+                <li><a href="https://olympics.com/pt/paris-2024/esportes/judo"> Saiba Mais </a></li>
             </ul>
         </nav>
     </header>
@@ -152,21 +155,20 @@
                 <div class="image-text">
                     <p>O judô é uma tradicional arte marcial japonesa derivada do jiu-jitsu, a técnica de combate corpo a corpo dos antigos guerreiros samurais. O Dr. Jigoro Kano é creditado como fundador da disciplina em Tóquio depois de abrir seu primeiro dojo (escola), o kōdōkan, em 1882. Em japonês, a palavra “judô” significa “o caminho suave”, mas o tradicional esporte de luta dificilmente pode ser descrito como tal, pois requer um esforço físico considerável. Dr. Kano combinou os princípios filosóficos do judô com métodos de educação física, intelectual e moral, ao mesmo tempo em que eliminou muitos dos aspectos mais perigosos do jiu-jitsu. O judô tornou-se popular na Europa e, particularmente na França, no fim do século 20, tornando-se a primeira arte marcial amplamente praticada fora do Japão.</p>
                     <img src="judo.webp" alt="Judô">
+                    <h2>os medalhistas brasileiros</h2>
                 </div>
-                <h2>Os Medalhistas Brasileiros</h2>
             </div>
         </section>
 
         <section class="container">
             <div class="container-item">
-                <h2>Breve Resumo das Regras</h2>
+                <h2>Breve resumo das regras</h2>
                 <p>O judô tem como objetivo derrubar o oponente, imobilizá-lo ou forçar uma finalização. A pontuação principal é o ippon, concedido por um golpe decisivo ou imobilização por 20 segundos, resultando na vitória imediata. O waza-ari é um ponto parcial, dado por um golpe menos eficaz ou imobilização entre 10 e 20 segundos; dois waza-aris equivalem a um ippon. As competições são divididas por categorias de peso e duram quatro minutos, com prorrogação em caso de empate, além de penalidades por falta de combate ou comportamento inadequado.</p>
             </div>
         </section>
     </main>
-
     <footer>
-        <h2>Olimpíadas <i>Tec</i></h2>
+        <h2>Olimpíadas<i>Tec</i></h2>
         <ul>
             <li><b>Desenvolvido por:</b> Kauany Medardo</li>
             <li><b>Fone:</b> (43) 9 9876-4511</li>

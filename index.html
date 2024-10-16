@@ -1,200 +1,126 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title> Página Inicial </title>
     <link rel="stylesheet" href="style.css">
-    <style>
-        li{
-            text-decoration: none;
-            line-height: 1.5;
-            text-align: center;
-            list-style-type: none;
-        }
-
-        .imgcentro{
-            text-align: center;
-            margin: auto;
-            display: block;
-            width: 50%;
-        }
-    </style>
 </head>
+
 <body>
-    <header> 
-       <img src="img/bambole.jpg" alt="" class="imgcentro">
-
-       <section>
-           <h1> OLIMPÍADAS 2024 </h1>
-           <h3> Modalidades </h3>
-           <ul>
-               <li> <a href="volei.html"> Volei de Quadra </a></li>
-               <li> <a href="futebol.html"> Futebol  </a></li>
-               <li> <a href="skate.html"> Skate </a></li>
-               <li> <a href="surf.html"> Surf  </a></li>
-               <li> <a href="tenis.html"> Tenis </a></li>
-               <li> <a href="atletismo.html"> Atletismo </a></li>
-               <li><a href="bmxfreestyle.html">  BMX FreeStyle</a> </li>
-               <li><a href="hipismo.html"> Hipismo </a></li>
-               <li><a href="tiroarco.html"> Tiro com Arco </a></li>
-               <li><a href="tiroesportivo.html"> Tiro Esportivo </a></li> 
-               <li><a href="natacao.html"> Natação </a></li> 
-               <li><a href="handebol.html"> Handebol </a></li> 
-               <li><a href="judo2.html"> Judo2</a></li> 
-               <li><a href="judo.html">Judo</a></li>
-           </ul>
-       </section>
-
+    <header class="cabecalho">
+        <div class="container"> 
+            <input type="checkbox" id="menu" class="container__botao">
+            <label for="menu" class="container__rotulo">
+                <span class="cabecalho__menu-hamburguer container__imagem">
+                </span>
+            </label>
+            <h1 class="container__titulo"> Olimpíadas 2024 </h1>
+            <ul class="lista-menu">
+                <li> <a href="volei.html"> Volei de Quadra </a></li>
+                <li> <a href="futebol.html"> Futebol </a></li>
+                <li> <a href="skate.html"> Skate </a></li>
+                <li> <a href="surf.html"> Surf </a></li>
+                <li> <a href="tenis.html"> Tenis </a></li>
+                <li> <a href="atletismo.html"> Atletismo </a></li>
+                <li><a href="bmxfreestyle.html"> BMX FreeStyle</a> </li>
+                <li><a href="hipismo.html"> Hipismo </a></li>
+                <li><a href="tiroarco.html"> Tiro com Arco </a></li>
+                <li><a href="tiroesportivo.html"> Tiro Esportivo </a></li>
+                <li><a href="natacao.html"> Natação </a></li>
+                <li><a href="handebol.html"> Handebol </a></li>
+                <li><a href="boxe.html"> Boxe </a></li>
+                <li><a href="judo.html">Judo</a></li>
+            </ul>
+        </div>
     </header>
 
+
     <main>
-        <main>
             <section>
-                <div class="flex">
-                    <div class="quadradoF">
+                <div class="flex"> <!-- PRIMEIRA LINHA COM 4 IMAGENS -->
                         <div class="quadrado">
-                            <img class="imagem" src="morango.jpg">
-                            <p class="texto">Morango é considerado, na linguagem vulgar, como o fruto vermelho do morangueiro, da família das rosáceas. No entanto, em termos científicos não se pode considerar um fruto já que é constituído pelo receptáculo da flor original, em volta do qual se dispõem os frutos.
-                            </p>
+                            <a href="volei.html"> <img class="imagem" src="img/volei.jpg"></a>
+                            <p class="texto"> Volei de Quadra </p>
                         </div>
-                    </div>
-                    <div class="quadradoF">
                         <div class="quadrado">
-                            <img class="imagem" src="icon.png">
-                            <p class="texto">FLEXBOX FLEXBOX FLEXBOX FLEXBOX FLEXBOX FLEXBOX FLEXBOX FLEXBOX FLEXBOX FLEXBOX
-                                FLEXBOX FLEXBOX
-                            </p>
+                            <a href="futebol.html"> <img class="imagem" src="img/futebol.jpg"></a>
+                            <p class="texto"> Futebol </p>
                         </div>
-                    </div>
-                    <div class="quadradoF">
                         <div class="quadrado">
-                            <img class="imagem" src="icon.png">
-                            <p class="texto">FLEXBOX FLEXBOX FLEXBOX FLEXBOX FLEXBOX FLEXBOX FLEXBOX FLEXBOX FLEXBOX FLEXBOX
-                                FLEXBOX FLEXBOX
-                            </p>
+                            <a href="skate.html"><img class="imagem" src="img/skate.jpg"></a>
+                            <p class="texto">Skate </p>
                         </div>
-                    </div>
-    
+                    
+                        <div class="quadrado">
+                            <a href="surf.html"><img class="imagem" src="img/surf2.jpg"></a>
+                            <p class="texto"> Surf </p>
+                        </div>
                 </div>
-                <div class="flex">
-                    <div class="quadradoF">
-                        <div class="quadrado">
-                            <img class="imagem" src="icon.png">
-                            <p class="texto">FLEXBOX FLEXBOX FLEXBOX FLEXBOX FLEXBOX FLEXBOX FLEXBOX FLEXBOX FLEXBOX FLEXBOX
-                                FLEXBOX FLEXBOX
-                            </p>
-                        </div>
-                    </div>
-                    <div class="quadradoF">
-                        <div class="quadrado">
-                            <img class="imagem" src="icon.png">
-                            <p class="texto">FLEXBOX FLEXBOX FLEXBOX FLEXBOX FLEXBOX FLEXBOX FLEXBOX FLEXBOX FLEXBOX FLEXBOX
-                                FLEXBOX FLEXBOX
-                            </p>
-                        </div>
-                    </div>
-                    <div class="quadradoF">
-                        <div class="quadrado">
-                            <img class="imagem" src="icon.png">
-                            <p class="texto">FLEXBOX FLEXBOX FLEXBOX FLEXBOX FLEXBOX FLEXBOX FLEXBOX FLEXBOX FLEXBOX FLEXBOX
-                                FLEXBOX FLEXBOX
-                            </p>
-                        </div>
-                    </div>
     
-                </div>
-                <div class="flex">
-                    <div class="quadradoF">
-                        <div class="quadrado">
-                            <img class="imagem" src="icon.png">
-                            <p class="texto">FLEXBOX FLEXBOX FLEXBOX FLEXBOX FLEXBOX FLEXBOX FLEXBOX FLEXBOX FLEXBOX FLEXBOX
-                                FLEXBOX FLEXBOX
-                            </p>
-                        </div>
-                    </div>
-                    <div class="quadradoF">
-                        <div class="quadrado">
-                            <img class="imagem" src="icon.png">
-                            <p class="texto">FLEXBOX FLEXBOX FLEXBOX FLEXBOX FLEXBOX FLEXBOX FLEXBOX FLEXBOX FLEXBOX FLEXBOX
-                                FLEXBOX FLEXBOX
-                            </p>
-                        </div>
-                    </div>
-                    <div class="quadradoF">
-                        <div class="quadrado">
-                            <img class="imagem" src="icon.png">
-                            <p class="texto">FLEXBOX FLEXBOX FLEXBOX FLEXBOX FLEXBOX FLEXBOX FLEXBOX FLEXBOX FLEXBOX FLEXBOX
-                                FLEXBOX FLEXBOX
-                            </p>
-                        </div>
-                    </div>
     
+                <div class="flex"> <!-- SEGUNDA LINHA COM 4 IMAGENS -->
+                    <div class="quadrado">
+                        <a href="boxe.html"> <img class="imagem" src="img/boxeolimpic.jpg"></a>
+                        <p class="texto"> Boxe  </p>
+                    </div>
+                    <div class="quadrado">
+                        <a href="natacao.html"><img class="imagem" src="img/natacaoolimpic.jpg"></a>
+                        <p class="texto"> Natação </p>
+                    </div>
+                    <div class="quadrado">
+                        <a href="handebol.html"><img class="imagem" src="img/handebololimpic.jpg"></a>
+                        <p class="texto"> Handebol </p>
+                    </div>
+                    <div class="quadrado">
+                        <a href="hipismo.html"><img class="imagem" src="img/hipismoolimpic.jpg"></a>
+                        <p class="texto"> Hipismo </p>
+                    </div>
                 </div>
-                <div class="flex">
-                    <div class="quadradoF">
-                        <div class="quadrado">
-                            <img class="imagem" src="icon.png">
-                            <p class="texto">FLEXBOX FLEXBOX FLEXBOX FLEXBOX FLEXBOX FLEXBOX FLEXBOX FLEXBOX FLEXBOX FLEXBOX
-                                FLEXBOX FLEXBOX
-                            </p>
-                        </div>
-                    </div>
-                    <div class="quadradoF">
-                        <div class="quadrado">
-                            <img class="imagem" src="icon.png">
-                            <p class="texto">FLEXBOX FLEXBOX FLEXBOX FLEXBOX FLEXBOX FLEXBOX FLEXBOX FLEXBOX FLEXBOX FLEXBOX
-                                FLEXBOX FLEXBOX
-                            </p>
-                        </div>
-                    </div>
-                    <div class="quadradoF">
-                        <div class="quadrado">
-                            <img class="imagem" src="icon.png">
-                            <p class="texto">FLEXBOX FLEXBOX FLEXBOX FLEXBOX FLEXBOX FLEXBOX FLEXBOX FLEXBOX FLEXBOX FLEXBOX
-                                FLEXBOX FLEXBOX
-                            </p>
-                        </div>
-                    </div>
     
+                <div class="flex"> <!-- TERCEIRA  LINHA COM 4 IMAGENS -->
+                    <div class="quadrado">
+                        <a href="tiroarco.html"> <img class="imagem" src="img/tiroarcoolimpic.jpg"></a>
+                        <p class="texto"> Tiro com Arco </p>
+                    </div>
+                    <div class="quadrado">
+                        <a href="tiroesportivo.html"> <img class="imagem" src="img/tiroolimpic.jpg"></a>
+                        <p class="texto"> Tiro Esportivo  </p>
+                    </div>
+                    <div class="quadrado">
+                        <a href="judo.html"><img class="imagem" src="img/judoolimpic.jpg"></a>
+                        <p class="texto"> Judô </p>
+                    </div>
+                    <div class="quadrado">
+                        <a href="bmxfreestyle.html"><img class="imagem" src="img/bmxolimpic.jpg"></a>
+                        <p class="texto"> BMX Freestyle </p>
+                    </div>
                 </div>
-                <div class="flex">
-                    <div class="quadradoF">
-                        <div class="quadrado">
-                            <img class="imagem" src="icon.png">
-                            <p class="texto">FLEXBOX FLEXBOX FLEXBOX FLEXBOX FLEXBOX FLEXBOX FLEXBOX FLEXBOX FLEXBOX FLEXBOX
-                                FLEXBOX FLEXBOX
-                            </p>
-                        </div>
-                    </div>
-                    <div class="quadradoF">
-                        <div class="quadrado">
-                            <img class="imagem" src="icon.png">
-                            <p class="texto">FLEXBOX FLEXBOX FLEXBOX FLEXBOX FLEXBOX FLEXBOX FLEXBOX FLEXBOX FLEXBOX FLEXBOX
-                                FLEXBOX FLEXBOX
-                            </p>
-                        </div>
-                    </div>
-                    <div class="quadradoF">
-                        <div class="quadrado">
-                            <img class="imagem" src="icon.png">
-                            <p class="texto">FLEXBOX FLEXBOX FLEXBOX FLEXBOX FLEXBOX FLEXBOX FLEXBOX FLEXBOX FLEXBOX FLEXBOX
-                                FLEXBOX FLEXBOX
-                            </p>
-                        </div>
-                    </div>
     
+    
+    
+            <div class="flex"> <!-- QUARTA LINHA COM 2 IMAGENS -->
+                <div class="quadrado">
+                    <a href="atletismo.html"><img class="imagem" src="img/atletismoolimpic.jpg"></a>
+                    <p class="texto"> Atletismo </p>
                 </div>
+                <div class="quadrado">
+                    <a href="tenis.html"> <img class="imagem" src="img/tenisolimpic.jpg"></a>
+                    <p class="texto"> Tênis </p>
+                </div>
+            </div>
+    
             </section>
-    
-        </main>
     </main>
 
-
-
-
-    <footer>
-
-    </footer>
+  <!--  RODAPÉ -->
+<footer>
+    <h2> Olimpíadas 2024 </h2>
+    <ul>
+        <li> <b>Desenvolvido pelos Estudantes do Curso:</b> Técnico em Desenvolvimento de Sistemas </li>
+        <li> <b> Colégio <i> Reni </i>: </b>(43) 3435-1332 - Email: colegioreni@escola.pr.gov.br </li>
+    </ul>
+</footer>
 </body>
 </html>
